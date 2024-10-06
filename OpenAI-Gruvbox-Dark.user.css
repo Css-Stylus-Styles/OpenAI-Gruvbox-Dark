@@ -108,18 +108,6 @@
 	
 	
 	
-	/*Commit Mono*/
-	
-	@font-face {
-    font-family: "CommitMono";
-    src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
-    src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
-}
-	
 	
 	
 	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
@@ -554,7 +542,10 @@ color : #83a598 !important ;
 	
 	
 	
-	
+		/*Language and code button div background */
+div.bg-token-main-surface-secondary.text-token-text-secondary {
+  background-color: #282828 !important;
+}
 	
 	
 	/*Code background */
@@ -564,33 +555,28 @@ color : #83a598 !important ;
 	
 
 	
-	/*bar above code  */
 	
-	div.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md{
-		
-		background-color:#17191b !important;
-	}
 	
 	
 	/*Inline Code markdown block */
 p code , li code{
   color: #ffd29c  !important;
-  background: #16181a  !important;
+  background: #1a1b1d  !important;
 	font-family: "Bricolage Grotesque" !important;
-	border: solid 1px #d5c4a1 !important ; 
-	padding : 0.1rem  1rem !important ; 
+	font-size : 0.96rem !important ; 
+	border: solid 1px #928374 !important ; 
+	padding : 0.1rem  1.2rem !important ; 
 }
 	
 	
 	/*Code */
 	
-	/*
 	code {
-		color:#d5c4a1 !important;
-		background: #16181a !important ; 
+	color : #d5c4a1 !important ; 
+	font-family: "Fira Mono" !important ;
+	font-weight: 600 !important ;
 	}
 	
-	*/
 	
 	/*Code commennts */
 	.hljs-comment {
