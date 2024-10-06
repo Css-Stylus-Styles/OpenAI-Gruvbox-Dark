@@ -11,6 +11,195 @@
 	
 
 	
+	
+	
+	
+	
+	
+		
+	
+	
+/*Font Import */
+	
+	
+	/*Importing Margon */
+	
+	
+	/*Margon Medium Import */
+	
+@font-face {
+    font-family: "Margon 360 W08 Medium";
+    src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
+    src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
+}	
+	
+	
+	@import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
+
+	
+	
+	
+	/*Bricolage Grotesque Import */
+	
+	
+	
+	
+	@font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot");
+    src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.svg#Bricolage Grotesque")format("svg");
+}
+	
+	
+	
+	@import url(https://db.onlinewebfonts.com/c/102353a74d2e0700af3e11ef8a917b26?family=Bricolage+Grotesque) ;  
+	
+	
+	
+	
+	
+	
+	/*Lora Font Import*/
+	@font-face {
+    font-family: "Lora";
+    src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
+    src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
+}
+	
+	
+	
+	
+	
+	
+	@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+	
+	
+	
+	
+	
+	
+	
+	/*Lingistics Pro Font  */
+	
+	@font-face {
+    font-family: "Linguistics Pro";
+    src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
+    src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
+}
+	@import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
+	
+	
+	
+	
+	
+	/*Commit Mono*/
+	
+	@font-face {
+    font-family: "CommitMono";
+    src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
+    src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
+}
+	
+	
+	
+	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
+	
+		
+	
+	
+	
+	/*Fira Mono */
+		
+	/* 
+	
+	Fira Mono font weights:
+  - Fira Mono 400 (Regular)
+  - Fira Mono 500 (Medium)
+  - Fira Mono 700 (Bold)
+*/
+	
+	
+/* fira-mono-regular - latin */
+/* fira-mono-latin-400-normal */
+	/* fira-mono-latin-400-normal */
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+	
+	
+	
+	
+
+	
+	
+	
+		/* Spline Sans */
+
+/* spline-sans-latin-wght-normal */
+@font-face {
+  font-family: 'Spline Sans Variable';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 300 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 	
@@ -148,7 +337,7 @@
 	/*dark themes */
 	.dark {
 		/*text primary */
-    --text-primary: #f2e5bc !important ;
+    --text-primary: #f9f5d7 !important ;
 	/*second icon */
     --text-secondary: #98971a  !important;
 		/*Get chat GPT */
@@ -214,6 +403,11 @@ opacity: 0 !important ;
 		transition: color 0.4s ease-in-out !important ; 
 	}
 	
+	/*Send Message button */
+	.icon-2xl {
+	color : #ffd29c !important ; 
+}
+	
 	
 	/*Links inside the app */
 		
@@ -222,26 +416,49 @@ opacity: 0 !important ;
 	}
 	
 	
-	/*Side bar old caht colors */
-	div.relative.grow.overflow-hidden.whitespace-nowrap{
-		color:#d5c4a1 !important;
+	
+		/*Text Bindings*/
+	/*User prompt messgae displayed on chat page */
+	
+	div.whitespace-pre-wrap {
+    color: #d5c4a1 !important ; 
+	font-family: "Linguistics Pro" !important ; 
+}
+	
+	/*P tag color */
+	.markdown p {
+		color : #d5c4a1 !important ; 
+		font-family: "Linguistics Pro" !important ; 
 		
 	}
 	
-	
-	li {
-		color:#d5c4a1 !important;
+	/*List -> Li , ul  , ol  */
+	.markdown li  , ol  , ul {
+		color:#f2e5bc !important;
+		font-family: "Linguistics Pro" !important ; 
 	}
 	
-	li:hover{
+	li:hover , ol:hover , ul:hover {
 		color: #f9f5d7 !important ; 
 		transition: color 0.4s ease-in-out !important ; 
 	}
 	
 	li::marker{
 		color:#fe8019 !important;
-		font-family:"chivo" , "CommitMono"  !important;
+		font-family: "Fira Mono"  !important;
+		font-size : 0.85rem !important ;
+		font-weight: 600 !important ; 
+		
 	}
+	
+	
+	
+	
+
+	
+	
+	
+	
 	
 	
 	
@@ -252,18 +469,88 @@ opacity: 0 !important ;
 	/*Heading */
 	.markdown h3 {
 		color:#b8bb26 !important;
-	
+		font-family: "Bricolage Grotesque" !important;
 	}
 	
-	/*strong */
+	/*Bold -> strong  color and font  */
 	strong {
 		color:#b8bb26 !important;
+		font-family: "Fira Mono" !important ; 
+		font-size : 0.88rem !important ; 
+		font-weight: 700 !important ; 
 	}
 	
 	strong:hover{
 		color: #fabd2f !important ; 
 		transition: color 0.5s ease-in-out !important ; 
 	}
+	
+	
+	/*Top Bar styles */
+	
+	.text-token-text-secondary {
+    color: #98971a !important  ;
+    font-family: "Bricolage Grotesque" !important;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Side bar stuff */
+	
+	/*Time line in old chats (how old the chats are ) */
+	 /*Days  library info in the side bar */
+	h3.font-semibold {
+  color : #b8bb26 !important ; 
+    font-family: "Bricolage Grotesque" !important;
+}
+	
+	
+	/*Side bar old caht colors */
+	/* Change font of the side bar old chats */
+	div.relative.grow.overflow-hidden.whitespace-nowrap{
+		color:#d5c4a1 !important;
+		font-family: "Lora" !important ; 
+		font-weight: 500 !important ; 
+		font-size: 0.8rem !important ; 
+		
+	}
+	
+	
+	
+	
+	
+	/*Side bar GPTs that were in use */
+	/*Recent GPTs in use */
+	div.grow.overflow-hidden.text-ellipsis.whitespace-nowrap.text-sm.text-token-text-primary {
+color : #83a598 !important ; 
+    font-family: "Bricolage Grotesque" !important;
+
+	} 
+	
+	/*Explore GPTs -> Changes the color and font */
+	span.text-sm {
+		color : #b8bb26 !important ; 
+    font-family: "Bricolage Grotesque" !important;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+	
+	
+	
 	
 	
 	
@@ -458,13 +745,31 @@ opacity: 0 !important ;
 /*input button background*/	
 	.dark .dark\:bg-token-main-surface-secondary {
     background-color: #16181a !important;
-		border: solid 3px #665c54 !important ; 
+		border: solid 2px #504945 !important ;
+		padding: 0.2rem 3rem  !important; 
 }
+				/*Hover*/
+		/*Hover for the border and other stuff in the backgorund */
 	/*text holder button */
-	textarea::placeholder{
-		color:#79740e !important;
+	.dark .dark\:bg-token-main-surface-secondary:hover{
+    background-color: #1d2021 !important;
+		border: solid 2px #fb4934 !important ;
+		padding: 0.2rem 3rem  !important; 
+		transition: background 0.6s ease-in-out  , border 0.7s ease-in-out !important ; 
+		
+}
+	
+	
+	/*text holder button */
+	textarea::placeholder , ._prosemirror-parent_15ceg_1 p{
+		color:#98971a !important;
+    	font-family: "Fira Mono" !important;
+		font-size: 0.9rem !important ; 
+		font-weight : 600 !important ; 
 	}
 	
+	
+
 
 	
 	
