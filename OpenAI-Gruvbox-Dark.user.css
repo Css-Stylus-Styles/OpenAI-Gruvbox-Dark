@@ -573,9 +573,9 @@ color : #83a598 !important ;
 	
 	
 	/*Inline Code markdown block */
-p code {
+p code , li code{
   color: #ffd29c  !important;
-  background: #282828  !important;
+  background: #16181a  !important;
 	font-family: "Bricolage Grotesque" !important;
 	border: solid 1px #d5c4a1 !important ; 
 	padding : 0.1rem  1rem !important ; 
