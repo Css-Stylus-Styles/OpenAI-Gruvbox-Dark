@@ -5,119 +5,96 @@
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
-
 @-moz-document domain("chatgpt.com") {
-    /* Insert code here... */
-	
-
-	
-	
-	
-	
-	
-	
-		
-	
-	
-/*Font Import */
-	
-	
+	/* Insert code here... */
+	/*Font Import */
 	/*Importing Margon */
-	
-	
 	/*Margon Medium Import */
-	
-@font-face {
-    font-family: "Margon 360 W08 Medium";
-    src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
-    src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
-}	
-	
-	
+	@font-face {
+		font-family: "Margon 360 W08 Medium";
+		src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
+		src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
+	}
+
+
 	@import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
 
-	
-	
-	
+
+
+
 	/*Bricolage Grotesque Import */
-	
-	
-	
-	
 	@font-face {
-    font-family: "Bricolage Grotesque";
-    src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot");
-    src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.svg#Bricolage Grotesque")format("svg");
-}
-	
-	
-	
-	@import url(https://db.onlinewebfonts.com/c/102353a74d2e0700af3e11ef8a917b26?family=Bricolage+Grotesque) ;  
-	
-	
-	
-	
-	
-	
+		font-family: "Bricolage Grotesque";
+		src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot");
+		src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.svg#Bricolage Grotesque")format("svg");
+	}
+
+
+
+	@import url(https://db.onlinewebfonts.com/c/102353a74d2e0700af3e11ef8a917b26?family=Bricolage+Grotesque);
+
+
+
+
+
+
 	/*Lora Font Import*/
 	@font-face {
-    font-family: "Lora";
-    src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
-    src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
-}
-	
-	
-	
-	
-	
-	
+		font-family: "Lora";
+		src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
+		src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
+	}
+
+
+
+
+
+
 	@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	/*Lingistics Pro Font  */
-	
 	@font-face {
-    font-family: "Linguistics Pro";
-    src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
-    src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
-}
+		font-family: "Linguistics Pro";
+		src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
+		src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
+	}
 	@import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
-	
-		
-	
-	
-	
+
+
+
+
+
 	/*Fira Mono */
-		
 	/* 
 	
 	Fira Mono font weights:
@@ -125,647 +102,717 @@
   - Fira Mono 500 (Medium)
   - Fira Mono 700 (Bold)
 */
-	
-	
-/* fira-mono-regular - latin */
-/* fira-mono-latin-400-normal */
+	/* fira-mono-regular - latin */
 	/* fira-mono-latin-400-normal */
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-display: auto;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-	
-	
-	
-	
+	/* fira-mono-latin-400-normal */
+	@font-face {
+		font-family: 'Fira Mono';
+		font-style: normal;
+		font-display: auto;
+		font-weight: 400;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
 
-	
-	
-	
-		/* Spline Sans */
 
-/* spline-sans-latin-wght-normal */
-@font-face {
-  font-family: 'Spline Sans Variable';
-  font-style: normal;
-  font-display: auto;
-  font-weight: 300 700;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-	
-	    :root
 
-{
-    /* 0 is for darkest 
+
+
+
+
+	/* Spline Sans */
+	/* spline-sans-latin-wght-normal */
+	@font-face {
+		font-family: 'Spline Sans Variable';
+		font-style: normal;
+		font-display: auto;
+		font-weight: 300 700;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+
+
+
+	/*Hack Font */
+	@font-face {
+		font-family: "Hack";
+		src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot");
+		src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.svg#Hack")format("svg");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	:root {
+		/* 0 is for darkest 
     1 is for hard 
     higher values for hard  */
+		/* 2.1 Dark theme color variables */
+		--bg0-dh: #1d2021;
+		--bg-dark-new: #1F1E1D;
+		/*For basic text new color added  	 */
+		--text-normal: #ffd29c;
+
+		--shadow-bg: #1d1b1a;
+
+		--bg1-dark: #3c3836;
+		--bg-dark: #282828;
+		--bg2-dark: #504945;
+		--bg3-dark: #665c54;
+		--bg4-dark: #7c6f64;
+		--bg5-dark: #928374;
+		--bg_visual: #503946;
+		--bg_red: #cc241d;
+		--bg_green: #98971a;
+		--bg_blue: #458588;
+		--bg_yellow: #d79921;
+		--shadow: #16181a;
+		--shadow-var1: #17191b;
+		--shadow-cur: #1a1b1d;
+
+		--fg-dark: #ebdbb2;
+		--grey0-dark: #7f897d;
+		--grey1-dark: #859289;
+		--grey2-dark: #9aa79d;
+
+		--faded-red: #fb4934;
+		--faded-orange: #fe8019;
+		--faded-yellow: #fabd2f;
+		--faded-green: #b8bb26;
+		--faded-aqua: #8ec07c;
+		--faded-blue: #83a598;
+		--faded-purple: #d3869b;
+
+		--dim-red: #cc241d;
+		--dim-orange: #d65d0e;
+		--dim-yellow: #d79921;
+		--dim-green: #98971a;
+		--dim-aqua: #689d6a;
+		--dim-blue: #458588;
+		--dim-purple: #b16286;
 
 
-    /* 2.1 Dark theme color variables */
-    --bg0-dh:       #1d2021;
-    --bg-dark-new  :  #1F1E1D ; 
-/*For basic text new color added  	 */
---text-normal :#ffd29c ;
-
-    --shadow-bg:         #1d1b1a;
-    
-    --bg1-dark:       #3c3836;
-    --bg-dark:        #282828;
-    --bg2-dark:       #504945;
-    --bg3-dark:       #665c54;
-    --bg4-dark:       #7c6f64;
-    --bg5-dark:       #928374;
-    --bg_visual:      #503946;
-    --bg_red:         #cc241d;
-    --bg_green:       #98971a;
-    --bg_blue:        #458588;
-    --bg_yellow:      #d79921;
-    --shadow:         #16181a;
-    --shadow-var1:         #17191b;
-    --shadow-cur:         #1a1b1d;
-
-    --fg-dark:        #ebdbb2;
-    --grey0-dark:     #7f897d;
-    --grey1-dark:     #859289;
-    --grey2-dark:     #9aa79d;
-
-    --faded-red:     #fb4934;
-    --faded-orange:  #fe8019;
-    --faded-yellow:  #fabd2f;
-    --faded-green:   #b8bb26;
-    --faded-aqua:    #8ec07c;
-    --faded-blue:    #83a598;
-    --faded-purple:  #d3869b;
-
-    --dim-red:       #cc241d;
-    --dim-orange:    #d65d0e;
-    --dim-yellow:    #d79921;
-    --dim-green:     #98971a;
-    --dim-aqua:      #689d6a;
-    --dim-blue:      #458588;
-    --dim-purple:    #b16286;
+		/* 2.2 Light theme color variables */
+		--bg0-light: #f0edd8;
+		--bg1-light: #f6f1dd;
+		--bg-light: #fdf6e3;
+		--bg2-light: #f3efda;
+		--bg3-light: #edead5;
+		--bg4-light: #e4e1cd;
+		--bg5-light: #dfdbc8;
+		--grey0-light: #a4ad9e;
+		--grey1-light: #939f91;
+		--grey2-light: #879686;
+		--shadow-light: #3c474d20;
 
 
-    /* 2.2 Light theme color variables */
-    --bg0-light:     #f0edd8;
-    --bg1-light:     #f6f1dd;
-    --bg-light:      #fdf6e3;
-    --bg2-light:     #f3efda;
-    --bg3-light:     #edead5;
-    --bg4-light:     #e4e1cd;
-    --bg5-light:     #dfdbc8;
-    --grey0-light:   #a4ad9e;
-    --grey1-light:   #939f91;
-    --grey2-light:   #879686;
-    --shadow-light:  #3c474d20;
-
-
-    --text-offwhite: #fbf1c7;
-    --text-offyellowish: #f2e5bc;
-    --text-white: #f9f5d7;
-    --text-offwhite-faded: #ebdbb2;
-    --text--faded: #d5c4a1;
-    --text--veryfade: #928374;
-
-    
-
-    
+		--text-offwhite: #fbf1c7;
+		--text-offyellowish: #f2e5bc;
+		--text-white: #f9f5d7;
+		--text-offwhite-faded: #ebdbb2;
+		--text--faded: #d5c4a1;
+		--text--veryfade: #928374;
 
 
 
-    --bg_visual_light:      #eaedc8;
-    --bg_red_light:         #fbe3da;
-    --bg_green_light:       #f0f1d2;
-    --bg_blue_light:        #e9f0e9;
-    --bg_yellow_light:      #faedcd;
-
-    --fg-light:       #5c6a72;
-
-    --light-red:     #f85552;
-    --light-orange:  #f57d26;
-    --light-yellow:  #bf983d;
-    --light-green:   #899c40;
-    --light-aqua:    #569d79;
-    --light-blue:    #5a93a2;
-    --light-purple:  #b87b9d;
-
-    --light-dim-red:    #f1706f;
-    --light-dim-orange: #f39459;
-    --light-dim-yellow: #e4b649;
-    --light-dim-green:  #a4bb4a;
-    --light-dim-aqua:   #6ec398;
-    --light-dim-blue:   #6cb3c6;
-    --light-dim-purple: #e092be;
 
 
 
- --dark-red: #9d0006;    /* faded_red: #9d0006 [red] 88 [9] 157-0-6 137-0-9 #890009 */
-  --dark-green: #79740e;  /* faded_green: #79740e [green] 100 [10] 121-116-14 102-98-13 #66620d */
-  --dark-yellow: #b57614; /* faded_yellow: #b57614 [yellow] 136 [11] 181-118-20 165-99-17 #a56311 */
-  --dark-blue: #076678;   /* faded_blue: #076678 [blue] 24 [12] 7-102-120 14-83-101 #0e5365 */
-  --dark-purple: #8f3f71; /* faded_purple: #8f3f71 [purple] 96 [13] 143-63-113 123-43-94 #7b2b5e */
-  --dark-aqua: #427b58;   /* faded_aqua: #427b58 [aqua] 66 [14] 66-123-88 53-106-70 #356a46 */
-  --dark-orange: #af3a03;
+
+		--bg_visual_light: #eaedc8;
+		--bg_red_light: #fbe3da;
+		--bg_green_light: #f0f1d2;
+		--bg_blue_light: #e9f0e9;
+		--bg_yellow_light: #faedcd;
+
+		--fg-light: #5c6a72;
+
+		--light-red: #f85552;
+		--light-orange: #f57d26;
+		--light-yellow: #bf983d;
+		--light-green: #899c40;
+		--light-aqua: #569d79;
+		--light-blue: #5a93a2;
+		--light-purple: #b87b9d;
+
+		--light-dim-red: #f1706f;
+		--light-dim-orange: #f39459;
+		--light-dim-yellow: #e4b649;
+		--light-dim-green: #a4bb4a;
+		--light-dim-aqua: #6ec398;
+		--light-dim-blue: #6cb3c6;
+		--light-dim-purple: #e092be;
 
 
-/* light colors */
-  --interface-light0-hard: #f9f5d7; /* light0_hard: #f9f5d7 [h0] 230 [ ] 249-245-215 248-244-205 #f8f4cd */
-  --interface-light0: #fbf1c7; /* light0: #fbf1c7 [fg0][bg0] 229 [0] 251-241-199 250-238-187 #faeebb */
-  --interface-light0-soft: #f2e5bc; /* light0_soft: #f2e5bc [s0] 228 [ ] 242-229-188 239-223-174 #efdfae */
-  --interface-light1: #ebdbb2; /* light1: #ebdbb2 [fg1][bg1] 223 [15] 235-219-178 230-212-163 #e6d4a3 */
-  --interface-light2: #d5c4a1; /* light2: #d5c4a1 [fg2][bg2] 250 [ ] 213-196-161 203-184-144 #cbb890 */
-  --interface-light3: #bdae93; /* light3: #bdae93 [fg3][bg3] 248 [ ] 189-174-147 175-159-129 #af9f81 */
-  --interface-light4: #a89988; /* light4: #a89988 */
+
+		--dark-red: #9d0006;
+		/* faded_red: #9d0006 [red] 88 [9] 157-0-6 137-0-9 #890009 */
+		--dark-green: #79740e;
+		/* faded_green: #79740e [green] 100 [10] 121-116-14 102-98-13 #66620d */
+		--dark-yellow: #b57614;
+		/* faded_yellow: #b57614 [yellow] 136 [11] 181-118-20 165-99-17 #a56311 */
+		--dark-blue: #076678;
+		/* faded_blue: #076678 [blue] 24 [12] 7-102-120 14-83-101 #0e5365 */
+		--dark-purple: #8f3f71;
+		/* faded_purple: #8f3f71 [purple] 96 [13] 143-63-113 123-43-94 #7b2b5e */
+		--dark-aqua: #427b58;
+		/* faded_aqua: #427b58 [aqua] 66 [14] 66-123-88 53-106-70 #356a46 */
+		--dark-orange: #af3a03;
 
 
- 
-	
-	
+		/* light colors */
+		--interface-light0-hard: #f9f5d7;
+		/* light0_hard: #f9f5d7 [h0] 230 [ ] 249-245-215 248-244-205 #f8f4cd */
+		--interface-light0: #fbf1c7;
+		/* light0: #fbf1c7 [fg0][bg0] 229 [0] 251-241-199 250-238-187 #faeebb */
+		--interface-light0-soft: #f2e5bc;
+		/* light0_soft: #f2e5bc [s0] 228 [ ] 242-229-188 239-223-174 #efdfae */
+		--interface-light1: #ebdbb2;
+		/* light1: #ebdbb2 [fg1][bg1] 223 [15] 235-219-178 230-212-163 #e6d4a3 */
+		--interface-light2: #d5c4a1;
+		/* light2: #d5c4a1 [fg2][bg2] 250 [ ] 213-196-161 203-184-144 #cbb890 */
+		--interface-light3: #bdae93;
+		/* light3: #bdae93 [fg3][bg3] 248 [ ] 189-174-147 175-159-129 #af9f81 */
+		--interface-light4: #a89988;
+		/* light4: #a89988 */
 	}
-	
-	
+
+
 	/*dark themes */
 	.dark {
 		/*text primary */
-    --text-primary: #f9f5d7 !important ;
-	/*second icon */
-    --text-secondary: #98971a  !important;
+		--text-primary: #f9f5d7 !important;
+		/*second icon */
+		--text-secondary: #98971a !important;
 		/*Get chat GPT */
-    --text-tertiary: #665c54  !important;
+		--text-tertiary: #665c54 !important;
 		/*Down arrow and button */
-    --text-quaternary: #8ec07c !important ;
-		
+		--text-quaternary: #8ec07c !important;
+
 		/*error message */
-    --text-error: red  !important;
+		--text-error: red !important;
 		/*Border around the sugeestions on the front page */
-    --border-light: #1d2021  !important;
-    --border-medium: #83a598  !important;
-    --border-heavy: white  !important;
-    --border-xheavy  : white  !important;
+		--border-light: #1d2021 !important;
+		--border-medium: #83a598 !important;
+		--border-heavy: white !important;
+		--border-xheavy: white !important;
 		/*make background */
-    --main-surface-primary: #1a1b1d  !important;
-    --main-surface-secondary: #3c3836  !important;
-    --main-surface-tertiary: #3c3836  !important;
-    --sidebar-surface-primary:  #17191b !important;
-    --sidebar-surface-secondary: #3c3836  !important;
-    --sidebar-surface-tertiary:  red !important;
-    --link: #7ab7ff !important;
-    --link-hover: #5e83b3 !important;
-}
-	
+		--main-surface-primary: #1a1b1d !important;
+		--main-surface-secondary: #3c3836 !important;
+		--main-surface-tertiary: #3c3836 !important;
+		--sidebar-surface-primary: #17191b !important;
+		--sidebar-surface-secondary: #3c3836 !important;
+		--sidebar-surface-tertiary: red !important;
+		--link: #7ab7ff !important;
+		--link-hover: #5e83b3 !important;
+	}
+
 	/*Hide the suggestiions*/
 	/*Front page  suggestions */
-.dark .dark\:text-gray-500, 
-button.relative.flex.w-40.flex-col.gap-2.rounded-2xl.border.px-3.pb-4.pt-3.shadow-xxs.transition.enabled\:hover\:bg-token-main-surface-secondary.disabled\:cursor-not-allowed {
-    --tw-text-opacity: 1 !important;
-    color: #7c6f64 !important;
-    display: none !important;
-}
+	.dark .dark\:text-gray-500,
+	button.relative.flex.w-40.flex-col.gap-2.rounded-2xl.border.px-3.pb-4.pt-3.shadow-xxs.transition.enabled\:hover\:bg-token-main-surface-secondary.disabled\:cursor-not-allowed {
+		--tw-text-opacity: 1 !important;
+		color: #7c6f64 !important;
+		display: none !important;
+	}
 
-	
-	
+
+
 	/*Displaimer hidden */
 	/*Chat GPT might make mistakes -> hidden  */
 	.relative.px-2.py-2.text-center.text-xs.text-token-text-secondary.md\:px-\[60px\] {
-opacity: 0 !important ; 
+		opacity: 0 !important;
 	}
 
 	/*Suggestions on the first page */
 	button.relative.flex.w-40.flex-col.gap-2.rounded-2xl.border.px-3.pb-4.pt-3.shadow-xxs {
-  background-color: #17191b !important;
-		border-width: 3px !important ; 
-}
-
-	
-	/*regeneration button */
-	button.mb-1.me-1  {
-	
-	background-color:#3c3836 !important;	
+		background-color: #17191b !important;
+		border-width: 3px !important;
 	}
-	
+
+
+	/*regeneration button */
+	button.mb-1.me-1 {
+
+		background-color: #3c3836 !important;
+	}
+
 	/*Icons on the link */
 	svg {
-	color:#fe8019 !important;
+		color: #fe8019 !important;
 	}
-	
-	svg:hover{
-		color: #b8bb26 !important ; 
-		transition: color 0.4s ease-in-out !important ; 
+
+	svg:hover {
+		color: #b8bb26 !important;
+		transition: color 0.4s ease-in-out !important;
 	}
-	
+
 	/*Send Message button */
 	.icon-2xl {
-	color : #ffd29c !important ; 
-}
-	
-	
+		color: #ffd29c !important;
+	}
+
+
 	/*Links inside the app */
-		
-	a{
-		color: #fb4934 !important  ; 
+	a {
+		color: #fb4934 !important;
+		font-family: "Hack" !important;
+		font-size: 0.86rem !important;
+		font-weight: 600 !important;
 	}
+
+	/*Hover for the Links inside app's markdown replies */
+	a:hover {
+		color: #83a598 !important;
+		font-family: "Hack" !important;
+		text-decoration: underline !important;
+		font-size: 0.85rem !important;
+		font-weight: 600 !important;
+		transition: color  0.4s ease-in-out !important;
+	}
+
 	
 	
 	
-		/*Text Bindings*/
-	/*User prompt messgae displayed on chat page */
-	
-	div.whitespace-pre-wrap {
-    color: #d5c4a1 !important ; 
-	font-family: "Linguistics Pro" !important ; 
+	/*Tranculate links */
+	/*links from other websites which are hidden  like embedded links */
+	span.truncate {
+		color: #fb4934 !important;
+		font-family: "hack" !important;
+		font-size: 0.86rem !important;
+		font-weight: 600 !important;
+}
+	/*Embedded link hover */
+	span.truncate:hover {
+		color: #83a598 !important;
+		font-family: "hack" !important;
+		font-size: 0.86rem !important;
+		font-weight: 600 !important;
 }
 	
-	/*P tag color */
-	.markdown p {
-		color : #d5c4a1 !important ; 
-		font-family: "Linguistics Pro" !important ; 
-		
-	}
 	
-	/*List -> Li , ul  , ol  */
-	.markdown li  , ol  , ul {
-		color:#f2e5bc !important;
-		font-family: "Linguistics Pro" !important ; 
-	}
 	
-	li:hover , ol:hover , ul:hover {
-		color: #f9f5d7 !important ; 
-		transition: color 0.4s ease-in-out !important ; 
-	}
 	
-	li::marker{
-		color:#fe8019 !important;
-		font-family: "Fira Mono"  !important;
-		font-size : 0.85rem !important ;
-		font-weight: 600 !important ; 
-		
-	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
 	
 
+
+	/*Text Bindings*/
+	/*User prompt messgae displayed on chat page */
+	div.whitespace-pre-wrap {
+		color: #d5c4a1 !important;
+		font-family: "Linguistics Pro" !important;
+	}
+
+	/*P tag color */
+	.markdown p {
+		color: #d5c4a1 !important;
+		font-family: "Linguistics Pro" !important;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	.markdown p:not(li p) {
+ 		color: #d5c4a1 !important;
+		font-family: "Linguistics Pro" !important; 
+}
+
+	/*List -> Li , ul  , ol  */
+	.markdown li,
+	ol,
+	ul {
+		color: #f2e5bc !important;
+		font-family: "Linguistics Pro" !important;
+	}
+
+	li:hover,
+	ol:hover,
+	ul:hover {
+		color: #f9f5d7 !important;
+		transition: color 0.4s ease-in-out !important;
+	}
+
+	li::marker {
+		color: #fe8019 !important;
+		font-family: "Fira Mono" !important;
+		font-size: 0.85rem !important;
+		font-weight: 600 !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*Formatters */
-	
 	/*Heading */
 	.markdown h3 {
-		color:#b8bb26 !important;
+		color: #b8bb26 !important;
 		font-family: "Bricolage Grotesque" !important;
 	}
-	
+
 	/*Bold -> strong  color and font  */
 	strong {
-		color:#b8bb26 !important;
-		font-family: "Fira Mono" !important ; 
-		font-size : 0.88rem !important ; 
-		font-weight: 700 !important ; 
+		color: #b8bb26 !important;
+		font-family: "Bricolage Grotesque" !important;
+		font-size: 0.88rem !important;
+		font-weight: 700 !important;
 	}
-	
-	strong:hover{
-		color: #fabd2f !important ; 
-		transition: color 0.5s ease-in-out !important ; 
+
+	strong:hover {
+		color: #fabd2f !important;
+		transition: color 0.5s ease-in-out !important;
 	}
-	
-	
+
+
 	/*Top Bar styles */
-	
 	.text-token-text-secondary {
-    color: #98971a !important  ;
-    font-family: "Bricolage Grotesque" !important;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		color: #98971a !important;
+		font-family: "Bricolage Grotesque" !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*Side bar stuff */
-	
 	/*Time line in old chats (how old the chats are ) */
-	 /*Days  library info in the side bar */
+	/*Days  library info in the side bar */
 	h3.font-semibold {
-  color : #b8bb26 !important ; 
-    font-family: "Bricolage Grotesque" !important;
-}
-	
-	
+		color: #b8bb26 !important;
+		font-family: "Bricolage Grotesque" !important;
+	}
+
+
 	/*Side bar old caht colors */
 	/* Change font of the side bar old chats */
-	div.relative.grow.overflow-hidden.whitespace-nowrap{
-		color:#d5c4a1 !important;
-		font-family: "Lora" !important ; 
-		font-weight: 500 !important ; 
-		font-size: 0.8rem !important ; 
-		
+	div.relative.grow.overflow-hidden.whitespace-nowrap {
+		color: #d5c4a1 !important;
+		font-family: "Lora" !important;
+		font-weight: 500 !important;
+		font-size: 0.8rem !important;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	/*Side bar GPTs that were in use */
 	/*Recent GPTs in use */
 	div.grow.overflow-hidden.text-ellipsis.whitespace-nowrap.text-sm.text-token-text-primary {
-color : #83a598 !important ; 
-    font-family: "Bricolage Grotesque" !important;
+		color: #83a598 !important;
+		font-family: "Bricolage Grotesque" !important;
+	}
 
-	} 
-	
 	/*Explore GPTs -> Changes the color and font */
 	span.text-sm {
-		color : #b8bb26 !important ; 
-    font-family: "Bricolage Grotesque" !important;
-    font-size: .875rem;
-    line-height: 1.25rem;
-}
-	
-	
-	
-	
-	
-	
-		/*Language and code button div background */
-div.bg-token-main-surface-secondary.text-token-text-secondary {
-  background-color: #282828 !important;
-}
-	
-	
-	/*Code background */
-	div.overflow-y-auto.p-4{
-		background-color:#17191b !important;
+		color: #b8bb26 !important;
+		font-family: "Bricolage Grotesque" !important;
+		font-size: .875rem;
+		line-height: 1.25rem;
 	}
-	
 
-	
-	
-	
-	
-	/*Inline Code markdown block */
-p code , li code{
-  color: #ffd29c  !important;
-  background: #1a1b1d  !important;
-	font-family: "Bricolage Grotesque" !important;
-	font-size : 0.96rem !important ; 
-	border: solid 1px #928374 !important ; 
-	padding : 0.1rem  1.2rem !important ; 
-}
-	
-	
-	/*Code */
-	
-	code {
-	color : #d5c4a1 !important ; 
-	font-family: "Fira Mono" !important ;
-	font-weight: 600 !important ;
+
+
+
+
+
+	/*Language and code button div background */
+	div.bg-token-main-surface-secondary.text-token-text-secondary {
+		background-color: #282828 !important;
 	}
-	
-	
+
+
+	/*Code background */
+	div.overflow-y-auto.p-4 {
+		background-color: #17191b !important;
+	}
+
+
+
+
+
+
+	/*Inline Code markdown block */
+	p code,
+	li code {
+		color: #ffd29c !important;
+		background: #1a1b1d !important;
+		font-family: "Bricolage Grotesque" !important;
+		font-size: 0.96rem !important;
+		border: solid 1px #928374 !important;
+		padding: 0.1rem 1.2rem !important;
+	}
+
+
+	/*Code */
+	code {
+		color: #d5c4a1 !important;
+		font-family: "Fira Mono" !important;
+		font-weight: 600 !important;
+	}
+
+
 	/*Code commennts */
 	.hljs-comment {
-    color: #7c6f64 !important  ; 
-}
-	
-	
+		color: #7c6f64 !important;
+	}
+
+
 	/*code keyword */
-.hljs-keyword{
-    color: #8ec07c;
-}
-	
-	
-		
+	.hljs-keyword {
+		color: #8ec07c;
+	}
+
+
+
 	/*code keyword */
-.hljs-string{
-    color:#b8bb26 !important;
-}
-	
+	.hljs-string {
+		color: #b8bb26 !important;
+	}
+
 	/*Code meta */
 	.hljs-meta {
-    color: #d3869b;
-}
-	
-	
-		/*Code meta */
+		color: #d3869b;
+	}
 
-		.hljs-title {
-    color: #b8bb26;
-}
-	
-	
+
+	/*Code meta */
+	.hljs-title {
+		color: #b8bb26;
+	}
+
+
 	/*type of var */
-		.hljs-type {
-    color: #fe8019;
-}
-	
+	.hljs-type {
+		color: #fe8019;
+	}
+
 	span.hljs-class {
-		color:#8ec07c !important;
-		
+		color: #8ec07c !important;
 	}
-	
-	
+
+
 	.hljs-number {
-		color:#fb4934 !important;
-		
+		color: #fb4934 !important;
 	}
-	
+
 	/*parameter of func*/
 	.hljs-params {
-		color:#83a598 !important;
-		
+		color: #83a598 !important;
 	}
-	
-	
-	.hljs-attr{
-		color: #fb4934 !important ; 
+
+
+	.hljs-attr {
+		color: #fb4934 !important;
 	}
-	
-	
-	
-	.hljs-name{
-		color: #83a598 !important ; 
+
+
+
+	.hljs-name {
+		color: #83a598 !important;
 	}
-	
-	
-	.hljs-attribute{
-		color: #fe8019 !important ; 
+
+
+	.hljs-attribute {
+		color: #fe8019 !important;
 	}
-	
-	
-	
-	.hljs-selector-class{
-		color:#b8bb26 !important;
+
+
+
+	.hljs-selector-class {
+		color: #b8bb26 !important;
 	}
-	
-	
-	
-	.hljs-bullet{
-		color:#fe8019 !important;
+
+
+
+	.hljs-bullet {
+		color: #fe8019 !important;
 	}
-	
-	
-	
-	.hljs-section{
-		color: #b8bb26 !important ; 
+
+
+
+	.hljs-section {
+		color: #b8bb26 !important;
 	}
-	
+
 	/*markdown code block strong */
-	span.hljs-strong{
-		color:#b8bb26 !important;
-		
+	span.hljs-strong {
+		color: #b8bb26 !important;
 	}
-	
-	
-	
-	
-	
-	
-	
-	div.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md> span{
-		
+
+
+
+
+
+
+
+	div.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md > span {
+
 		font-family: "CommitMono" !important;
-		font-size: 0.9rem !important ; 
-		font-weight: 600 !important ; 
+		font-size: 0.9rem !important;
+		font-weight: 600 !important;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*error backgound */
-	
 	.text-token-text-error {
-		background-color:#17191b !important;
-		color:black !important;
-}
-	
+		background-color: #17191b !important;
+		color: black !important;
+	}
+
 
 	/*border dialogue box */
 	.border-token-surface-error\/15 {
-    border-color: #8ec07c !important ;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		border-color: #8ec07c !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*Buttons and colors */
-	
-	
-/*input button background*/	
+	/*input button background*/
 	.dark .dark\:bg-token-main-surface-secondary {
-    background-color: #16181a !important;
-		border: solid 2px #504945 !important ;
-		padding: 0.2rem 3rem  !important; 
-}
-				/*Hover*/
-		/*Hover for the border and other stuff in the backgorund */
+		background-color: #16181a !important;
+		border: solid 2px #504945 !important;
+		padding: 0.2rem 3rem !important;
+	}
+	/*Hover*/
+	/*Hover for the border and other stuff in the backgorund */
 	/*text holder button */
-	.dark .dark\:bg-token-main-surface-secondary:hover{
-    background-color: #1d2021 !important;
-		border: solid 2px #fb4934 !important ;
-		padding: 0.2rem 3rem  !important; 
-		transition: background 0.6s ease-in-out  , border 0.7s ease-in-out !important ; 
-		
-}
-	
-	
+	.dark .dark\:bg-token-main-surface-secondary:hover {
+		background-color: #16181a !important;
+		border: solid 2px #928374 !important;
+		padding: 0.2rem 3.2rem !important;
+		transition: background 0.6s ease-in-out, padding 0.22s ease-in-out !important;
+	}
+
+
 	/*text holder button */
-	textarea::placeholder , ._prosemirror-parent_15ceg_1 p{
-		color:#98971a !important;
-    	font-family: "Fira Mono" !important;
-		font-size: 0.9rem !important ; 
-		font-weight : 600 !important ; 
+	textarea::placeholder,
+	._prosemirror-parent_15ceg_1 p {
+		color: #98971a !important;
+		font-family: "Fira Mono" !important;
+		font-size: 0.9rem !important;
+		font-weight: 600 !important;
 	}
 	
 	
-
-
+	
+	
+	
+	/*chat page main share button */
+	
+	.mb-1\.5 .text-token-text-primary {
+    color: #b8bb26 ; 
+    font-family: "hack" !important ; 
+		font-size: 0.8rem !important ; 
+		font-weight: 600 !important ; 
+}
+	
+	/* Options inside  the  share button */
+	 
+	div.text-sm{
+  color : #b8bb26 !important  ; 
+		font-family: "Bricolage Grotesque" !important ; 
+}
+	
+	
+	
+	
+	
 	
 	
 	
