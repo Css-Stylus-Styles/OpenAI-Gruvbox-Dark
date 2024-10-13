@@ -362,6 +362,16 @@
 		border-width: 3px !important;
 	}
 
+	
+	/*Hide the display gretting H1 Heading */
+	/*How can i Help You */
+	
+	.inline-flex h1:first-of-type {
+  display: none !important;
+}
+
+	
+	
 
 	/*regeneration button */
 	button.mb-1.me-1 {
@@ -369,7 +379,7 @@
 		background-color: #3c3836 !important;
 	}
 
-	/*Icons on the link */
+	/*Icons on the  */
 	svg {
 		color: #fe8019 !important;
 	}
@@ -386,22 +396,23 @@
 
 
 	/*Links inside the app */
-	a {
+	a  {
 		color: #fb4934 !important;
 		font-family: "Hack" !important;
 		font-size: 0.86rem !important;
 		font-weight: 600 !important;
 	}
 
-	/*Hover for the Links inside app's markdown replies */
+	
+	
+		/*Links but hiding the hover fromt the side bar chat history links */
 	a:hover {
-		color: #83a598 !important;
-		font-family: "Hack" !important;
-		text-decoration: underline !important;
+  		color: #83a598 !important;
+		font-family: "hack" !important;
 		font-size: 0.85rem !important;
 		font-weight: 600 !important;
 		transition: color  0.4s ease-in-out !important;
-	}
+}
 
 	
 	
@@ -694,6 +705,22 @@
 	.hljs-section {
 		color: #b8bb26 !important;
 	}
+	
+	
+	/*Css selectors */
+	.hljs-selector-pseudo {
+		color : #d3869b !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	/*markdown code block strong */
 	span.hljs-strong {
@@ -702,6 +729,8 @@
 
 
 
+	
+	
 
 
 
