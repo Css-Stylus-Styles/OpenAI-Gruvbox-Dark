@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           chatgpt.com - Jun 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -148,30 +148,29 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
+	
+	/*Karla Font Testing */
+	
+	@font-face {
+    font-family: "Karla";
+    src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
+    src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
@@ -472,7 +471,7 @@
 	ol,
 	ul {
 		color: #f2e5bc !important;
-		font-family: "Linguistics Pro" !important;
+		font-family: "Karla" !important;
 	}
 
 	li:hover,
@@ -484,7 +483,7 @@
 
 	li::marker {
 		color: #fe8019 !important;
-		font-family: "Fira Mono" !important;
+		font-family:"Hack" !important;
 		font-size: 0.85rem !important;
 		font-weight: 600 !important;
 	}
@@ -527,6 +526,7 @@
 	.text-token-text-secondary {
 		color: #98971a !important;
 		font-family: "Bricolage Grotesque" !important;
+		
 	}
 
 
@@ -558,9 +558,9 @@
 	/* Change font of the side bar old chats */
 	div.relative.grow.overflow-hidden.whitespace-nowrap {
 		color: #d5c4a1 !important;
-		font-family: "Lora" !important;
+		font-family: "Karla" !important;
 		font-weight: 500 !important;
-		font-size: 0.8rem !important;
+		font-size: 0.85rem !important;
 	}
 
 
@@ -570,7 +570,7 @@
 	/*Side bar GPTs that were in use */
 	/*Recent GPTs in use */
 	div.grow.overflow-hidden.text-ellipsis.whitespace-nowrap.text-sm.text-token-text-primary {
-		color: #83a598 !important;
+		color: #fe8019 !important;
 		font-family: "Bricolage Grotesque" !important;
 	}
 
@@ -618,7 +618,7 @@
 	/*Code */
 	code {
 		color: #d5c4a1 !important;
-		font-family: "Fira Mono" !important;
+		font-family: "Hack" !important;
 		font-weight: 600 !important;
 	}
 
@@ -716,6 +716,27 @@
 	
 	
 	
+	
+	
+	/*Font For Coding */
+	.hljs-comment,
+.hljs-keyword,
+.hljs-string,
+.hljs-meta,
+.hljs-title,
+.hljs-type,
+.hljs-class,
+.hljs-number,
+.hljs-params,
+.hljs-attr,
+.hljs-name,
+.hljs-attribute,
+.hljs-selector-class,
+.hljs-bullet,
+.hljs-section,
+.hljs-selector-pseudo {
+  font-family: "Hack" !important;
+}
 	
 	
 	
@@ -826,7 +847,7 @@
 	
 	.mb-1\.5 .text-token-text-primary {
     color: #b8bb26 ; 
-    font-family: "hack" !important ; 
+    font-family: "Karla" !important ; 
 		font-size: 0.8rem !important ; 
 		font-weight: 600 !important ; 
 }
@@ -837,7 +858,6 @@
   color : #b8bb26 !important  ; 
 		font-family: "Bricolage Grotesque" !important ; 
 }
-	
 	
 	
 	
