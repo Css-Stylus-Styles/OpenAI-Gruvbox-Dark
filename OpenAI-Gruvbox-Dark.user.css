@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           chatgpt.com - Jun 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.3
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -330,9 +330,11 @@
 		/*make background */
 		--main-surface-primary: #1a1b1d !important;
 		--main-surface-secondary: #3c3836 !important;
-		--main-surface-tertiary: #3c3836 !important;
+		--main-surface-tertiary: #282828 !important;
 		--sidebar-surface-primary: #17191b !important;
-		--sidebar-surface-secondary: #3c3836 !important;
+		
+		/*side bar surface */
+		--sidebar-surface-secondary: #282828 !important;
 		--sidebar-surface-tertiary: red !important;
 		--link: #7ab7ff !important;
 		--link-hover: #5e83b3 !important;
@@ -786,8 +788,6 @@
 
 
 
-
-
 	/*error backgound */
 	.text-token-text-error {
 		background-color: #17191b !important;
@@ -799,9 +799,6 @@
 	.border-token-surface-error\/15 {
 		border-color: #8ec07c !important;
 	}
-
-
-
 
 
 
@@ -848,9 +845,26 @@
 	.mb-1\.5 .text-token-text-primary {
     color: #b8bb26 ; 
     font-family: "Karla" !important ; 
-		font-size: 0.8rem !important ; 
+		font-size: 0.98rem !important ; 
 		font-weight: 600 !important ; 
+		border: solid #3c3836 !important ; 
+		padding : 0rem 1rem !important; 
 }
+	
+	/*Chat -> Share Hover button */
+	.mb-1\.5 .text-token-text-primary:hover{
+		background: #f9f5d7 !important ; 
+    color: #79740e ; 
+    font-family: "Karla" !important ; 
+		font-size: 0.98rem !important ; 
+		font-weight: 600 !important ; 
+		border: solid #3c3836 !important ; 
+		padding : 0rem 1.2rem !important; 
+		transition: background 0.5s ease-in-out , padding 0.3s ease-in !important ; 		 
+			 
+		
+}
+	
 	
 	/* Options inside  the  share button */
 	 
