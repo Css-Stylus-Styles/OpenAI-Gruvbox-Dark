@@ -1,12 +1,31 @@
+
 /* ==UserStyle==
 @name           chatgpt.com - Jun 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
+@version        1.0.4
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
-	/* Insert code here... */
+		
+	@import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
+@import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
+
+	
+	@font-face {
+    font-family: "Harding Text Web Regular Regular";
+    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot");
+    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.svg#Harding Text Web Regular Regular")format("svg");
+}
+
+
+	
+
+/* Insert code here... */
 	/*Font Import */
 	/*Importing Margon */
 	/*Margon Medium Import */
@@ -86,6 +105,17 @@
 
 
 
+	/*Commit Mono*/
+	@font-face {
+		font-family: "CommitMono";
+		src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
+		src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
+	}
+
 
 
 	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
@@ -135,6 +165,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 	/*Hack Font */
 	@font-face {
 		font-family: "Hack";
@@ -148,26 +189,138 @@
 
 
 
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 	/*Karla Font Testing */
-	
 	@font-face {
-    font-family: "Karla";
-    src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
-    src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
+		font-family: "Karla";
+		src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
+		src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@font-face {
+		font-family: "Karla Medium";
+		src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot");
+		src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.svg#Karla Medium")format("svg");
+	}
+
+
+
+
+
+
+
+	@font-face {
+		font-family: "Karla Bold";
+		src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot");
+		src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*Archivo Font */
+	@font-face {
+		font-family: "Archivo";
+		src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot");
+		src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
+	}
+
+
+
+
+
+
+/* literata-latin-wght-normal */
+@font-face {
+  font-family: 'Literata Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
+    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
+}
+
+
+
+
+@font-face {
+    font-family: "Fantasque Sans Mono Bold";
+    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
+    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
+}
+
+
+
+
+
 	
 	
 	
@@ -335,7 +488,8 @@
 		
 		/*side bar surface */
 		--sidebar-surface-secondary: #282828 !important;
-		--sidebar-surface-tertiary: red !important;
+		/*Side bar Chat selected */
+		--sidebar-surface-tertiary: #504d08 !important;
 		--link: #7ab7ff !important;
 		--link-hover: #5e83b3 !important;
 	}
@@ -353,7 +507,7 @@
 
 	/*Displaimer hidden */
 	/*Chat GPT might make mistakes -> hidden  */
-	.relative.px-2.py-2.text-center.text-xs.text-token-text-secondary.md\:px-\[60px\] {
+	div.min-h-4 {
 		opacity: 0 !important;
 	}
 
@@ -372,7 +526,6 @@
 }
 
 	
-	
 
 	/*regeneration button */
 	button.mb-1.me-1 {
@@ -382,25 +535,61 @@
 
 	/*Icons on the  */
 	svg {
-		color: #fe8019 !important;
+		color: #fb4934 !important;
 	}
 
 	svg:hover {
-		color: #b8bb26 !important;
+		color: #fe8019 !important;
 		transition: color 0.4s ease-in-out !important;
 	}
 
 	/*Send Message button */
 	.icon-2xl {
-		color: #ffd29c !important;
+			background: #1d1b1a !important ; 
+		border-radius: 12px !important ; 
+		border : solid 2px #665c54 !important ; 
+		color: #98971a !important;
 	}
 
+	/*Advacnved Voice Button backgound Icon  */
+	div.absolute.inset-0.flex.items-center.justify-center{
+		background: #1d1b1a !important ; 
+		border-radius: 12px !important ; 
+		border : solid 2px #3c3836 !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	/*Links inside the app */
 	a  {
 		color: #fb4934 !important;
 		font-family: "Hack" !important;
-		font-size: 0.86rem !important;
+		font-size: 0.6
+			rem !important;
 		font-weight: 600 !important;
 	}
 
@@ -473,7 +662,8 @@
 	ol,
 	ul {
 		color: #f2e5bc !important;
-		font-family: "Karla" !important;
+		font-family: "Literata Variable" !important;
+		
 	}
 
 	li:hover,
@@ -484,7 +674,7 @@
 	}
 
 	li::marker {
-		color: #fe8019 !important;
+		color: #fb4934 !important;
 		font-family:"Hack" !important;
 		font-size: 0.85rem !important;
 		font-weight: 600 !important;
@@ -556,13 +746,13 @@
 	}
 
 
-	/*Side bar old caht colors */
+	/*Side bar old chat colors */
 	/* Change font of the side bar old chats */
 	div.relative.grow.overflow-hidden.whitespace-nowrap {
-		color: #d5c4a1 !important;
-		font-family: "Karla" !important;
+		color: #ffd29c !important;
+		font-family: "Jetbrains Mono" !important;
 		font-weight: 500 !important;
-		font-size: 0.85rem !important;
+		font-size: 0.78rem !important;
 	}
 
 
@@ -589,6 +779,7 @@
 
 
 
+
 	/*Language and code button div background */
 	div.bg-token-main-surface-secondary.text-token-text-secondary {
 		background-color: #282828 !important;
@@ -608,111 +799,801 @@
 	/*Inline Code markdown block */
 	p code,
 	li code {
-		color: #ffd29c !important;
-		background: #1a1b1d !important;
-		font-family: "Bricolage Grotesque" !important;
-		font-size: 0.96rem !important;
-		border: solid 1px #928374 !important;
-		padding: 0.1rem 1.2rem !important;
+		color: #83a867 !important;
+		background: #282828 !important;
+		font-family: "Jetbrains Mono" !important;
+		font-size: 0.76rem !important;
+		font-weight : 800 !important ; 
+		border: solid 1px #3c3836 !important;
+		border-radius: 23px !important ; 
+		padding: 0.1rem 0.5rem !important;
 	}
 
 
 	/*Code */
 	code {
-		color: #d5c4a1 !important;
-		font-family: "Hack" !important;
+		color: #8ec07c !important;
+		font-family: "Jetbrains Mono" !important;
 		font-weight: 600 !important;
 	}
-
-
-	/*Code commennts */
-	.hljs-comment {
-		color: #7c6f64 !important;
-	}
-
-
-	/*code keyword */
-	.hljs-keyword {
-		color: #8ec07c;
-	}
-
-
-
-	/*code keyword */
-	.hljs-string {
-		color: #b8bb26 !important;
-	}
-
-	/*Code meta */
-	.hljs-meta {
-		color: #d3869b;
-	}
-
-
-	/*Code meta */
-	.hljs-title {
-		color: #b8bb26;
-	}
-
-
-	/*type of var */
-	.hljs-type {
-		color: #fe8019;
-	}
-
-	span.hljs-class {
-		color: #8ec07c !important;
-	}
-
-
-	.hljs-number {
-		color: #fb4934 !important;
-	}
-
-	/*parameter of func*/
-	.hljs-params {
-		color: #83a598 !important;
-	}
-
-
-	.hljs-attr {
-		color: #fb4934 !important;
-	}
-
-
-
-	.hljs-name {
-		color: #83a598 !important;
-	}
-
-
-	.hljs-attribute {
-		color: #fe8019 !important;
-	}
-
-
-
-	.hljs-selector-class {
-		color: #b8bb26 !important;
-	}
-
-
-
-	.hljs-bullet {
-		color: #fe8019 !important;
-	}
-
-
-
-	.hljs-section {
-		color: #b8bb26 !important;
-	}
 	
 	
-	/*Css selectors */
-	.hljs-selector-pseudo {
-		color : #d3869b !important ; 
-	}
+	/*C Based Languages */
+	
+	code.hljs.language-c {
+    color: #ebdbb2 !important; /* Text color */
+}
+
+code.hljs.language-c   .hljs-meta {
+    color: #98971a !important; /* Greenish for preprocessor directives */
+}
+
+code.hljs.language-c   .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords */
+}
+
+code.hljs.language-c   .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+code.hljs.language-c   .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+code.hljs.language-c   .hljs-type {
+    color: #83a598 !important; /* Bluish for types */
+}
+
+code.hljs.language-c   .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+code.hljs.language-c   .hljs-built_in {
+    color: #8ec07c !important; /* Aqua for built-in functions */
+}
+
+code.hljs.language-c   .hljs-title.function_ {
+    color: #fabd2f !important; /* Yellow for function names */
+}
+	
+	
+	
+	
+	
+	/*Python*/
+	.hljs.language-python {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-python .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., import, def, class, if, else, try, except, finally) */
+}
+
+.hljs.language-python .hljs-built_in {
+    color: #8ec07c !important; /* Aqua for built-in functions (e.g., print, len, open) */
+}
+
+.hljs.language-python .hljs-title {
+    color: #fabd2f !important; /* Yellow for function and class names */
+}
+
+.hljs.language-python .hljs-title.function_ {
+    color: #fabd2f !important;
+}
+
+.hljs.language-python .hljs-title.class_ {
+    color: #fabd2f !important;
+}
+
+.hljs.language-python .hljs-params {
+    color: #d3869b !important; /* Purplish for function parameters */
+}
+
+.hljs.language-python .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-python .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-python .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-python .hljs-subst {
+    color: #ebdbb2 !important; /* Default color for substitutions inside strings */
+}
+
+.hljs.language-python .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., True, False, None) */
+}
+
+.hljs.language-python .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-python .hljs-meta {
+    color: #fb4934 !important;
+}
+
+.hljs.language-python .hljs-operator {
+    color: #fb4934 !important;
+}
+
+.hljs.language-python .hljs-name {
+    color: #83a598 !important;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Java*/
+	
+	.hljs.language-java {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-java .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., public, static, void, class, if, else, try, catch, finally, new, return, import, package) */
+}
+
+.hljs.language-java .hljs-type,
+.hljs.language-java .hljs-class .hljs-title {
+    color: #83a598 !important; /* Bluish for class names and type names (e.g., String, Integer, IOException, List, ArrayList) */
+}
+
+.hljs.language-java .hljs-function .hljs-title {
+    color: #fabd2f !important;
+}
+
+.hljs.language-java .hljs-params {
+    color: #d3869b !important;
+}
+
+.hljs.language-java .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-java .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-java .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-java .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., true, false, null) */
+}
+
+.hljs.language-java .hljs-meta {
+    color: #fabd2f !important; /* Yellow for annotations (e.g., @Override, @Test) */
+}
+
+.hljs.language-java .hljs-built_in {
+    color: #8ec07c !important;
+}
+
+.hljs.language-java .hljs-operator {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-java .hljs-symbol {
+    color: #d3869b !important;
+}
+
+.hljs.language-java .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-java .hljs-function {
+    color: #fabd2f !important;
+}
+
+.hljs.language-java .hljs-selector-tag {
+    color: #83a598 !important;
+}
+
+.hljs.language-java .hljs-attribute {
+    color: #fabd2f !important;
+}
+	
+	
+	.hljs.language-java .hljs-title{
+    color: #8ec07c !important;
+}
+	
+	
+	
+	
+	
+	/*C++*/
+	.hljs.language-cpp {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-cpp .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., if, else, for, while, int, double, char, bool, class, struct, namespace, return, new, delete, const, static, public, private, protected, virtual, friend, operator, template, typename, this, using, throw, try, catch) */
+}
+
+.hljs.language-cpp .hljs-type,
+.hljs.language-cpp .hljs-class .hljs-title {
+    color: #83a598 !important;
+}
+
+.hljs.language-cpp .hljs-title.function_ {
+    color: #fabd2f !important;
+}
+
+.hljs.language-cpp .hljs-params {
+    color: #d3869b !important;
+}
+
+.hljs.language-cpp .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-cpp .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-cpp .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-cpp .hljs-meta {
+    color: #d3869b !important;
+}
+
+.hljs.language-cpp .hljs-meta .hljs-string {
+    color: #b8bb26 !important;
+}
+
+.hljs.language-cpp .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., true, false, nullptr) */
+}
+
+.hljs.language-cpp .hljs-built_in {
+    color: #8ec07c !important; /* Aqua for built-in functions and types (e.g., std::cout, std::cin, std::endl, std::string, std::vector, std::map) */
+}
+
+.hljs.language-cpp .hljs-operator {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-cpp .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-cpp .hljs-function {
+    color: #fabd2f !important;
+}
+
+.hljs.language-cpp .hljs-symbol {
+    color: #d3869b !important;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Go */
+	
+	
+	.hljs.language-go {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-go .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., package, import, func, var, const, if, else, for, range, switch, case, default, return, go, select, map, struct, interface, type, chan, defer, go, goto) */
+}
+
+.hljs.language-go .hljs-title {
+    color: #fabd2f !important;
+}
+
+.hljs.language-go .hljs-title.function_ {
+    color: #fabd2f !important; /* Yellow for function names */
+}
+
+.hljs.language-go .hljs-title.class_ {
+    color: #83a598 !important;
+}
+
+.hljs.language-go .hljs-params {
+    color: #d3869b !important;
+}
+
+.hljs.language-go .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-go .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-go .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-go .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., true, false, nil, iota) */
+}
+
+.hljs.language-go .hljs-built_in {
+    color: #8ec07c !important;
+}
+
+.hljs.language-go .hljs-operator {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-go .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-go .hljs-symbol {
+    color: #d3869b !important;
+}
+
+.hljs.language-go .hljs-meta {
+    color: #fabd2f !important;
+}
+	
+	
+	.hljs.language-go .hljs-type {
+    color: #83a598 !important;
+}
+	
+	
+	
+	/*Rust */
+	.hljs.language-rust {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-rust .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., let, mut, fn, struct, enum, impl, for, while, loop, if, else, match, return, use, mod, pub, crate, super, self, Self, move, async, await, dyn, unsafe, trait, where, as, const, static, ref, mut, type) */
+}
+
+.hljs.language-rust .hljs-type {
+    color: #83a598 !important;
+}
+
+.hljs.language-rust .hljs-title {
+    color: #fabd2f !important;
+}
+
+.hljs.language-rust .hljs-title.function_ {
+    color: #fabd2f !important; /* Yellow for function names */
+}
+
+.hljs.language-rust .hljs-title.class_ {
+    color: #83a598 !important;
+}
+
+.hljs.language-rust .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-rust .hljs-variable.language_ {
+    color: #8ec07c !important;
+}
+
+.hljs.language-rust .hljs-params {
+    color: #d3869b !important;
+}
+
+.hljs.language-rust .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-rust .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-rust .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-rust .hljs-doctag {
+    color: #928374 !important;
+}
+
+.hljs.language-rust .hljs-meta {
+    color: #d3869b !important;
+}
+
+.hljs.language-rust .hljs-meta .hljs-string {
+    color: #b8bb26 !important;
+}
+
+.hljs.language-rust .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., true, false, Some, None, Ok, Err) */
+}
+
+.hljs.language-rust .hljs-built_in {
+    color: #8ec07c !important; /* Aqua for built-in functions and types (e.g., println!, format!, String, Vec, Result, Option, Box, Rc, Arc, Cell, RefCell, &str, i32, u32, usize, f32, f64) */
+}
+
+.hljs.language-rust .hljs-operator {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-rust .hljs-punctuation {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-rust .hljs-symbol {
+    color: #d3869b !important;
+}
+
+.hljs.language-rust .hljs-attribute {
+    color: #fabd2f !important;
+}
+
+.hljs.language-rust .hljs-function {
+    color: #fabd2f !important;
+}
+	
+	
+	
+	
+	
+	
+	/* JavaScript*/
+	
+	.hljs.language-javascript {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-javascript .hljs-keyword {
+    color: #fb4934 !important; /* Reddish for keywords (e.g., function, var, if, else, while) */
+}
+
+.hljs.language-javascript .hljs-variable {
+    color: #ebdbb2 !important; /* Default variable color */
+}
+
+.hljs.language-javascript .hljs-built_in {
+    color: #8ec07c !important; /* Aqua for built-in objects and functions (e.g., console, JSON) */
+}
+
+.hljs.language-javascript .hljs-title {
+    color: #fabd2f !important; /* Yellow for function names */
+}
+
+.hljs.language-javascript .hljs-title.function_ {
+    color: #fabd2f !important;
+}
+
+.hljs.language-javascript .hljs-params {
+    color: #d3869b !important; /* Purplish for function parameters */
+}
+
+.hljs.language-javascript .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for strings */
+}
+
+.hljs.language-javascript .hljs-number {
+    color: #d3869b !important; /* Purplish for numbers */
+}
+
+.hljs.language-javascript .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-javascript .hljs-regexp {
+    color: #b8bb26 !important; /* Yellowish for regular expressions */
+}
+
+.hljs.language-javascript .hljs-literal {
+    color: #d3869b !important; /* Purplish for literals (e.g., true, false, null) */
+}
+
+.hljs.language-javascript .hljs-subst {
+    color: #ebdbb2 !important; /* Default color for substitutions inside strings */
+}
+
+.hljs.language-javascript .hljs-class {
+    color: #83a598 !important;
+}
+
+.hljs.language-javascript .hljs-attr {
+    color: #fabd2f !important;
+}
+
+.hljs.language-javascript .hljs-property {
+    color: #8ec07c !important;
+}
+
+.hljs.language-javascript .hljs-punctuation {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-javascript .hljs-operator {
+    color: #fb4934 !important;
+}
+
+.hljs.language-javascript .hljs-symbol {
+    color: #d3869b !important;
+}
+	
+	
+	
+	/*HTML*/
+	.hljs.language-html {
+    color: #ebdbb2 !important; /* Light background color for overall text */
+}
+
+.hljs.language-html .hljs-tag {
+    color: #83a598 !important; /* Bluish for HTML tags */
+}
+
+.hljs.language-html .hljs-name {
+    color: #83a598 !important; /* Bluish for tag names (e.g., div, p, h1) */
+}
+
+.hljs.language-html .hljs-attr {
+    color: #fabd2f !important; /* Yellow for attribute names (e.g., style, href, id) */
+}
+
+.hljs.language-html .hljs-string {
+    color: #b8bb26 !important; /* Yellowish for attribute values (the strings in quotes) */
+}
+
+.hljs.language-html .hljs-comment {
+    color: #928374 !important; /* Gray for comments */
+}
+
+.hljs.language-html .hljs-meta {
+    color: #fb4934 !important; /* Reddish for doctype declaration */
+}
+
+.hljs.language-html .hljs-keyword {
+    color: #fb4934 !important;
+}
+
+.hljs.language-html .hljs-symbol {
+    color: #d3869b !important;
+}
+
+.hljs.language-html .hljs-title,
+.hljs.language-html .hljs-section {
+    color: #fabd2f !important;
+}
+
+.hljs.language-html .hljs-selector-class,
+.hljs.language-html .hljs-selector-id,
+.hljs-selector-tag {
+    color: #83a598 !important;
+}
+
+.hljs.language-html .hljs-template-variable,
+.hljs.language-html .hljs-variable {
+    color: #ebdbb2 !important;
+}
+
+.hljs.language-html .hljs-built_in,
+.hljs.language-html .hljs-link {
+    color: #8ec07c !important;
+}
+	
+	
+	
+	/*
+	
+			General COde styles 	
+*/
+	.hljs {
+    color: #ebdbb2 !important; /* Default text color */
+}
+
+/* Comments */
+.hljs-comment {
+    color: #928374 !important; /* Gray */
+}
+
+/* Quotes */
+.hljs-quote {
+    color: #7c7873 !important; /* Slightly different gray */
+}
+
+/* Strings */
+.hljs-string {
+    color: #b8bb26 !important; /* Yellowish */
+}
+
+/* Regular Expressions */
+.hljs-regexp {
+    color: #d8a657 !important; /*  Orangish Yellow*/
+}
+
+/* Variables */
+.hljs-variable {
+    color: #ebdbb2 !important; /* keep default color */
+}
+
+/* Template Variables */
+.hljs-template-variable {
+    color: #ebdbb2 !important;
+}
+
+/* Attributes */
+.hljs-attribute {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Links */
+.hljs-link {
+    color: #b8bb26 !important; /* Yellowish */
+}
+
+/* Symbols */
+.hljs-symbol {
+    color: #ebdbb2 !important;
+}
+
+/* Bullet Points */
+.hljs-bullet {
+    color: #b8bb26 !important; /* Yellowish */
+}
+
+/* Meta String */
+.hljs-meta .hljs-string {
+    color: #b8bb26 !important; /* Yellowish */
+}
+
+/* Keywords */
+.hljs-keyword {
+    color: #fb4934 !important; /* Reddish */
+}
+
+/* Section Tag */
+.hljs-selector-tag {
+    color: #fb4934 !important; /* Reddish */
+}
+
+/* Operators */
+.hljs-operator {
+    color: #fb4934 !important; /* Reddish */
+}
+
+/* Punctuation */
+.hljs-punctuation {
+    color: #ebdbb2 !important; /* Default text color */
+}
+
+/* Function Titles */
+.hljs-title.function_,
+.hljs-function .hljs-title {
+    color: #fabd2f !important; /* Yellow */
+}
+
+/* Other Titles */
+.hljs-title,
+.hljs-section {
+    color: #fabd2f !important; /* Yellow */
+}
+
+/* Selector ID */
+.hljs-selector-id {
+    color: #fabd2f !important; /* Yellow */
+}
+
+/* Selector Class */
+.hljs-selector-class {
+    color: #83a598 !important;
+}
+
+/* Selector Pseudo */
+.hljs-selector-pseudo {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Meta */
+.hljs-meta {
+    color: #fabd2f !important; /* Yellow */
+}
+
+/* Numbers */
+.hljs-number {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Literals */
+.hljs-literal {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Deletion */
+.hljs-deletion {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Built-in Names */
+.hljs-built_in,
+.hljs-builtin-name {
+    color: #8ec07c !important; /* Aqua */
+}
+
+/* Types */
+.hljs-type {
+    color: #83a598 !important; /* Bluish */
+}
+
+/* Function Parameters */
+.hljs-params {
+    color: #ebdbb2 !important;
+}
+
+/* Class Titles */
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+    color: #83a598 !important; /* Bluish */
+}
+
+/* Tags */
+.hljs-tag {
+    color: #fb4934 !important;
+}
+
+/* Tag Names */
+.hljs-name {
+    color: #fb4934 !important;
+}
+
+/* Doctag */
+.hljs-doctag {
+    color: #83a598 !important; /* Bluish */
+}
+
+/* Meta Keywords */
+.hljs-meta .hljs-keyword {
+    color: #d3869b !important; /* Purplish */
+}
+
+/* Emphasis */
+.hljs-emphasis {
+    font-style: italic !important;
+}
+
+/* Strong */
+.hljs-strong {
+    font-weight: bold !important;
+}
+
+/* Additions */
+.hljs-addition {
+    color: #8ec07c !important; /* Aqua */
+}
+
+/* Formula */
+.hljs-formula {
+    font-style: italic !important;
+}
+
+/* Language Specifics (Placeholders) */
+.hljs-subst {
+    color: #ebdbb2 !important; /* Default text color */
+}
+	
+	
+	
+	
 	
 	
 	
@@ -737,7 +1618,7 @@
 .hljs-bullet,
 .hljs-section,
 .hljs-selector-pseudo {
-  font-family: "Hack" !important;
+  font-family: "Jetbrains Mono" !important;
 }
 	
 	
@@ -830,9 +1711,9 @@
 	/*text holder button */
 	textarea::placeholder,
 	._prosemirror-parent_15ceg_1 p {
-		color: #98971a !important;
-		font-family: "Fira Mono" !important;
-		font-size: 0.9rem !important;
+		color: #83a598 !important;
+    font-family: "Fantasque Sans Mono Bold" !important;
+		font-size: 0.95rem !important;
 		font-weight: 600 !important;
 	}
 	
@@ -844,10 +1725,10 @@
 	
 	.mb-1\.5 .text-token-text-primary {
     color: #b8bb26 ; 
-    font-family: "Karla" !important ; 
+    font-family: "Fantasque Sans Mono Bold" !important;
 		font-size: 0.98rem !important ; 
 		font-weight: 600 !important ; 
-		border: solid #3c3836 !important ; 
+		border: solid 2px  #3c3836 !important ; 
 		padding : 0rem 1rem !important; 
 }
 	
@@ -855,7 +1736,7 @@
 	.mb-1\.5 .text-token-text-primary:hover{
 		background: #f9f5d7 !important ; 
     color: #79740e ; 
-    font-family: "Karla" !important ; 
+    font-family: "Fantasque Sans Mono Bold" !important;
 		font-size: 0.98rem !important ; 
 		font-weight: 600 !important ; 
 		border: solid #3c3836 !important ; 
@@ -882,5 +1763,13 @@
 	
 	
 	
+	/*Msc STyles */
+	div.markdown.prose hr {
+    border-color: #3c3836 !important;
+}
+	
+	
+	
 	
 }
+
