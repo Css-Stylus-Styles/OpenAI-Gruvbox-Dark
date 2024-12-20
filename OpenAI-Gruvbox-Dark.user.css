@@ -2,7 +2,7 @@
 /* ==UserStyle==
 @name           chatgpt.com - Jun 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -1709,8 +1709,8 @@ code.hljs.language-c   .hljs-title.function_ {
 
 
 	/*text holder button */
-	textarea::placeholder,
-	._prosemirror-parent_15ceg_1 p {
+	
+	p.placeholder {
 		color: #83a598 !important;
     font-family: "Fantasque Sans Mono Bold" !important;
 		font-size: 0.95rem !important;
@@ -1718,6 +1718,11 @@ code.hljs.language-c   .hljs-title.function_ {
 	}
 	
 	
+	/*User Prompt Color */
+	div#prompt-textarea.ProseMirror[contenteditable="true"] {
+	color : #d5c4a1 !important ;  
+    font-family: "Fantasque Sans Mono Bold" !important;
+}
 	
 	
 	
