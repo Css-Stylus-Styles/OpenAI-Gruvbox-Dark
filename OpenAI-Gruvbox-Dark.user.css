@@ -2,7 +2,7 @@
 /* ==UserStyle==
 @name           chatgpt.com - Jun 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -145,7 +145,15 @@
 	}
 
 
-
+/* jetbrains-mono-latin-wght-normal */
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 
 
 
@@ -587,9 +595,8 @@
 	/*Links inside the app */
 	a  {
 		color: #fb4934 !important;
-		font-family: "Hack" !important;
-		font-size: 0.6
-			rem !important;
+		font-family: "Bricolage Grotesque" !important;
+		font-size: 0.9rem !important ; 
 		font-weight: 600 !important;
 	}
 
@@ -598,33 +605,14 @@
 		/*Links but hiding the hover fromt the side bar chat history links */
 	a:hover {
   		color: #83a598 !important;
-		font-family: "hack" !important;
+		font-family: "Bricolage Grotesque" !important;
 		font-size: 0.85rem !important;
 		font-weight: 600 !important;
 		transition: color  0.4s ease-in-out !important;
 }
 
 	
-	
-	
-	/*Tranculate links */
-	/*links from other websites which are hidden  like embedded links */
-	span.truncate {
-		color: #fb4934 !important;
-		font-family: "hack" !important;
-		font-size: 0.86rem !important;
-		font-weight: 600 !important;
-}
-	/*Embedded link hover */
-	span.truncate:hover {
-		color: #83a598 !important;
-		font-family: "hack" !important;
-		font-size: 0.86rem !important;
-		font-weight: 600 !important;
-}
-	
-	
-	
+
 	
 	
 	
@@ -1762,7 +1750,43 @@ code.hljs.language-c   .hljs-title.function_ {
 	
 	
 	
+	/*Links on teh news page */
+	a.ml-1.inline-flex.h-\[22px\].items-center.rounded-xl.bg-\[\#f4f4f4\].px-2.text-\[0\.5em\].font-medium.text-token-text-secondary.dark\:bg-token-main-surface-secondary.\!text-token-text-secondary.uppercase.hover\:bg-token-text-primary.hover\:\!text-token-main-surface-secondary.dark\:hover\:bg-token-text-primary.group {
+ 		background: #16181a !important ; 
+		border: solid 2.7px #504945 !important ; 
+		color: #83a867 !important;
+		font-family: "Jetbrains Mono Variable" !important;
+		font-family: "Bricolage Grotesque" !important ; 
+		font-size: 0.76rem !important;
+		font-weight : 800 !important ; 
+		border-radius: 23px !important ; 
+		padding: .8rem .5rem !important;
+   
+}
 	
+	/*Tranculate links */
+	/*links from other websites which are hidden  like embedded links */
+	span.truncate {
+		
+    color: #fb4934 !important;
+	text-decoration: underline !important;
+    font-size: 0.79rem !important;
+		font-family: "Bricolage Grotesque" !important ; 
+    font-weight: 800 !important;
+    border-radius: 23px !important;
+    padding: 0.1rem 0.5rem !important;
+}
+
+	/*Embedded link hover */
+	span.truncate:hover {
+			
+    color: #83a598 !important;
+		font-family: "Bricolage Grotesque" !important ; 
+    font-size: 0.79rem !important;
+    font-weight: 800 !important;
+    padding: 0.1rem 0.9rem !important;
+	transition: padding .4s ease-in-out !important ; 
+	}
 	
 	
 	
