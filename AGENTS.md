@@ -42,5 +42,10 @@ This repository contains a single Stylus-based UserCSS file. All modifications m
     ```
 *   **Font Usage:** Use the defined CSS variables (e.g., `var(--font-Jetbrains)`) for font-family declarations.
 
+### Commit Message Style
+*   **Format:** Use a concise, single-line subject. The format should be `type: subject`.
+*   **Type:** Use conventional commit types (e.g., `feat`, `fix`, `chore`, `style`).
+*   **Subject:** Focus on the area of change and what was done (e.g., `The links text was too small fixed`).
+
 ### External Rules
 *   **Rules:** No external Cursor or Copilot rules were found.
