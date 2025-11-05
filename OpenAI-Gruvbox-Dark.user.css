@@ -1,32 +1,41 @@
-
 /* ==UserStyle==
-@name           chatgpt.com - Jun 2024
-@namespace      github.com/openstyles/stylus
-@version        1.0.6
+@name           OpenAI-Gruvbox-Dark
+@namespace      github.com/Css-Styles-Styles/OpenAI-Gruvbox-Dark
+@version        1.0.7
 @description    A new userstyle
 @author         Me
-==/UserStyle== */
-@-moz-document domain("chatgpt.com") {
-		
-	@import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
-@import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
+@preprocessor   stylus
 
-	
-	@font-face {
-    font-family: "Harding Text Web Regular Regular";
-    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot");
-    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.svg#Harding Text Web Regular Regular")format("svg");
+
+@var checkbox  noLogo   "NO Hello text "                 1
+@var checkbox   noUpgrade "No Upgrade Button"            1
+@var checkbox   noGoogle "No Google Account Button"      1
+@var checkbox   noAddress "Hide your location from menu" 1
+@var checkbox   LocalFont  "Local Placeholder Font"      0
+@var checkbox   LoadWebFont  "Load Font From Web"        0
+
+:root {
+  --fallback-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 
-	
+@var select newfont 'Text Font' [
+    'Test Tiempos Text',
+    'Website Default',
+	'Geist Sans',
+]
 
-/* Insert code here... */
-	/*Font Import */
+@var select headfont 'Heading Font' [
+  'Inherit',
+  'Bricolage Grotesque Variable',
+
+]
+
+
+==/UserStyle== */
+@-moz-document domain("chatgpt.com") {
+
+	/* 1. Font Imports (Copied from Gemini) */
 	/*Importing Margon */
 	/*Margon Medium Import */
 	@font-face {
@@ -38,33 +47,17 @@
 		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
 	}
-
-
 	@import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
-
-
-
-
-	/*Bricolage Grotesque Import */
+	/* bricolage-grotesque-latin-wght-normal */
 	@font-face {
-		font-family: "Bricolage Grotesque";
-		src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot");
-		src: url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.eot?#iefix")format("embedded-opentype"),
-		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff2")format("woff2"),
-		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.woff")format("woff"),
-		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.ttf")format("truetype"),
-		url("https://db.onlinewebfonts.com/t/102353a74d2e0700af3e11ef8a917b26.svg#Bricolage Grotesque")format("svg");
+	font-family: 'Bricolage Grotesque Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 800;
+	font-stretch: 75% 100%;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/bricolage-grotesque:vf@latest/latin-standard-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 	}
-
-
-
-	@import url(https://db.onlinewebfonts.com/c/102353a74d2e0700af3e11ef8a917b26?family=Bricolage+Grotesque);
-
-
-
-
-
-
 	/*Lora Font Import*/
 	@font-face {
 		font-family: "Lora";
@@ -75,20 +68,7 @@
 		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
 	}
-
-
-
-
-
-
 	@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
-
-
-
-
-
-
-
 	/*Lingistics Pro Font  */
 	@font-face {
 		font-family: "Linguistics Pro";
@@ -100,11 +80,6 @@
 		url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
 	}
 	@import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
-
-
-
-
-
 	/*Commit Mono*/
 	@font-face {
 		font-family: "CommitMono";
@@ -115,26 +90,9 @@
 		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
 	}
-
-
-
 	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
-
-
-
-
-
 	/*Fira Mono */
-	/* 
-	
-	Fira Mono font weights:
-  - Fira Mono 400 (Regular)
-  - Fira Mono 500 (Medium)
-  - Fira Mono 700 (Bold)
-*/
 	/* fira-mono-regular - latin */
-	/* fira-mono-latin-400-normal */
-	/* fira-mono-latin-400-normal */
 	@font-face {
 		font-family: 'Fira Mono';
 		font-style: normal;
@@ -143,24 +101,16 @@
 		src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
-
-
-/* jetbrains-mono-latin-wght-normal */
-@font-face {
-  font-family: 'JetBrains Mono Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 800;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-
-
-
-
-
+	/* jetbrains-mono-latin-wght-normal */
+	@font-face {
+	font-family: 'JetBrains Mono Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 800;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
 	/* Spline Sans */
-	/* spline-sans-latin-wght-normal */
 	@font-face {
 		font-family: 'Spline Sans Variable';
 		font-style: normal;
@@ -169,21 +119,6 @@
 		src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*Hack Font */
 	@font-face {
 		font-family: "Hack";
@@ -194,20 +129,6 @@
 		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.svg#Hack")format("svg");
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*Karla Font Testing */
 	@font-face {
 		font-family: "Karla";
@@ -218,21 +139,6 @@
 		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	@font-face {
 		font-family: "Karla Medium";
 		src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot");
@@ -242,13 +148,6 @@
 		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.svg#Karla Medium")format("svg");
 	}
-
-
-
-
-
-
-
 	@font-face {
 		font-family: "Karla Bold";
 		src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot");
@@ -258,19 +157,6 @@
 		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*Archivo Font */
 	@font-face {
 		font-family: "Archivo";
@@ -281,63 +167,94 @@
 		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
 		url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
 	}
+	/* literata-latin-wght-normal */
+	@font-face {
+	font-family: 'Literata Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	@font-face {
+	font-family: "Fantasque Sans Mono";
+	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
+	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
+	}
+	@font-face {
+	font-family: "Fantasque Sans Mono Bold";
+	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
+	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
+	}
+	/* inclusive-sans-latin-400-normal */
+	@font-face {
+	font-family: 'Inclusive Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	/* manrope-latin-wght-normal */
+	@font-face {
+	font-family: 'Manrope Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 800;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	/*Geist Sans*/
+	/* geist-sans-latin-400-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.ttf) format('truetype');
+	}
+	/*Geist Mono Variable*/
+	/* geist-mono-latin-wght-normal */
+	@font-face {
+	font-family: 'Geist Mono Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	@font-face {
+	font-family: "Tiempos Text Regular";
+	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
+	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Tiempos Text Regular")format("svg");
+	}
+	/*Inter Font import*/
+	@font-face {
+	font-family: 'Inter Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
 
 
-
-
-
-
-/* literata-latin-wght-normal */
-@font-face {
-  font-family: 'Literata Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 200 900;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-
-
-
-
-
-
-@font-face {
-    font-family: "Fantasque Sans Mono";
-    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
-    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
-}
-
-
-
-
-@font-face {
-    font-family: "Fantasque Sans Mono Bold";
-    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
-    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
-}
-
-
-
-
-
-	
-	
-	
-
-
-
+	/* 2. Color Variables (Copied from OpenAI/Gemini) */
 	:root {
-		/* 0 is for darkest 
-    1 is for hard 
+		/* 0 is for darkest
+    1 is for hard
     higher values for hard  */
 		/* 2.1 Dark theme color variables */
 		--bg0-dh: #1d2021;
@@ -346,6 +263,8 @@
 		--text-normal: #ffd29c;
 
 		--shadow-bg: #1d1b1a;
+		/* Was picked from the side bar on grok interface  */
+		--bg-def-dark:#171718;
 
 		--bg1-dark: #3c3836;
 		--bg-dark: #282828;
@@ -406,11 +325,6 @@
 		--text--veryfade: #928374;
 
 
-
-
-
-
-
 		--bg_visual_light: #eaedc8;
 		--bg_red_light: #fbe3da;
 		--bg_green_light: #f0f1d2;
@@ -436,74 +350,161 @@
 		--light-dim-purple: #e092be;
 
 
-
 		--dark-red: #9d0006;
-		/* faded_red: #9d0006 [red] 88 [9] 157-0-6 137-0-9 #890009 */
 		--dark-green: #79740e;
-		/* faded_green: #79740e [green] 100 [10] 121-116-14 102-98-13 #66620d */
 		--dark-yellow: #b57614;
-		/* faded_yellow: #b57614 [yellow] 136 [11] 181-118-20 165-99-17 #a56311 */
 		--dark-blue: #076678;
-		/* faded_blue: #076678 [blue] 24 [12] 7-102-120 14-83-101 #0e5365 */
 		--dark-purple: #8f3f71;
-		/* faded_purple: #8f3f71 [purple] 96 [13] 143-63-113 123-43-94 #7b2b5e */
 		--dark-aqua: #427b58;
-		/* faded_aqua: #427b58 [aqua] 66 [14] 66-123-88 53-106-70 #356a46 */
 		--dark-orange: #af3a03;
 
 
 		/* light colors */
 		--interface-light0-hard: #f9f5d7;
-		/* light0_hard: #f9f5d7 [h0] 230 [ ] 249-245-215 248-244-205 #f8f4cd */
 		--interface-light0: #fbf1c7;
-		/* light0: #fbf1c7 [fg0][bg0] 229 [0] 251-241-199 250-238-187 #faeebb */
 		--interface-light0-soft: #f2e5bc;
-		/* light0_soft: #f2e5bc [s0] 228 [ ] 242-229-188 239-223-174 #efdfae */
 		--interface-light1: #ebdbb2;
-		/* light1: #ebdbb2 [fg1][bg1] 223 [15] 235-219-178 230-212-163 #e6d4a3 */
 		--interface-light2: #d5c4a1;
-		/* light2: #d5c4a1 [fg2][bg2] 250 [ ] 213-196-161 203-184-144 #cbb890 */
 		--interface-light3: #bdae93;
-		/* light3: #bdae93 [fg3][bg3] 248 [ ] 189-174-147 175-159-129 #af9f81 */
 		--interface-light4: #a89988;
-		/* light4: #a89988 */
 	}
 
 
-	/*dark themes */
-	.dark {
-		/*text primary */
-		--text-primary: #f9f5d7 !important;
-		/*second icon */
-		--text-secondary: #98971a !important;
-		/*Get chat GPT */
-		--text-tertiary: #665c54 !important;
-		/*Down arrow and button */
-		--text-quaternary: #8ec07c !important;
+	/* 3. Font Variables (Copied from Gemini) */
+	:root {
+		--font-Margon: "Margon 360 W08 Medium";
+		--font-BricolageGrotesque: "Bricolage Grotesque Variable";
+		--font-Lora: "Lora";
+		--font-LinguisticsPro: "Linguistics Pro";
+		--font-CommitMono: "CommitMono";
+		--font-FiraMono: 'Fira Mono';
+		--font-SplineSansVariable: 'Spline Sans Variable';
+		--font-Hack: "Hack";
+		--font-Karla: "Karla";
+		--font-KarlaMedium: "Karla Medium";
+		--font-KarlaBold: "Karla Bold";
+		--font-Archivo: "Archivo";
+		--font-LiterataVariable: 'Literata Variable';
+		--font-JetbrainsVar: 'JetBrains Mono Variable';
+		--font-Jetbrains: 'JetBrains Mono';
+		--font-GeistSans: 'Geist Sans';
+		--font-GeistMono: 'Geist Mono Variable';
+		--font-Basker: 'Baskervville';
+		--font-Tiempo: " Test Tiempos Text";
+	}
 
-		/*error message */
+	/* Putting Variables for the most used fonts */
+	$heading-font = Bricolage Grotesque Variable
+	$sans-serif = Geist Sans
+	$code-font = Geist Mono
+	$text-font =  Test Tiempos Text
+
+
+	/* 4. Conditional Logic (Copied from Gemini) */
+
+	/* Loading Fonts from the web for this */
+	if LoadWebFont {
+		p , div , span , button , body , html , p , li , ul , ol  {
+		font-family : "Tiempos Text Regular" !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+		}
+	}
+
+	/* Hide Grok Logo */
+	if noLogo {
+		.text-wrapper {
+			opacity: 0 !important;
+		}
+	}
+
+	.logo{
+		display : none !important ;
+	}
+
+
+	/* Hide Upgrade Button */
+	if noUpgrade {
+		.buttons-container.adv-upsell{
+			opacity: 0 !important;
+		}
+	}
+
+
+	/* NO Google Account button to make it look minimal  */
+	if noGoogle {
+		.boqOnegoogleliteOgbOneGoogleBar{
+			opacity: 1  !important;
+		}
+	}
+
+
+	/* Hide your  Location */
+	if noAddress {
+		.location-menu-item-container {
+			opacity: 0 !important;
+		}
+	}
+
+
+	/* Heading Font Selector  */
+	:root{
+		--default-heading-font: headfont ;
+	}
+
+	if headfont != 'Inherit' {
+		.markdown h1 , .markdown h2 , .markdown h3 , .markdown h4 , .markdown h5 , .markdown h6 {
+			font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
+		}
+	} else {
+		.markdown h1 , .markdown h2 , .markdown h3 , .markdown h4 , .markdown h5 , .markdown h6 {
+			font-family: newfont, sans-serif !important;
+		}
+	}
+
+
+	/* Text Font Selector */
+	:root {
+		--dropdown-text-font:newfont ;
+		--fallback-text: sans-serif !important ;
+	}
+
+	if newfont != 'Website Default'{
+		p , li ,  ul , ol , button , input , textarea, strong, span , div  {
+			font-family : var(--dropdown-text-font) !important ;
+		}
+	}else {
+		p, li , ul , ol , button , input , textarea , strong, span , *  {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+		}
+	}
+
+
+	/* 5. Core Styles (Refactored with Nesting, Font Smoothing, and Micro-interactions) */
+
+	/* Dark Theme Colors (Existing) */
+	.dark {
+		--text-primary: #f9f5d7 !important;
+		--text-secondary: #98971a !important;
+		--text-tertiary: #665c54 !important;
+		--text-quaternary: #8ec07c !important;
 		--text-error: red !important;
-		/*Border around the sugeestions on the front page */
 		--border-light: #1d2021 !important;
 		--border-medium: #83a598 !important;
 		--border-heavy: white !important;
 		--border-xheavy: white !important;
-		/*make background */
 		--main-surface-primary: #1a1b1d !important;
 		--main-surface-secondary: #3c3836 !important;
 		--main-surface-tertiary: #282828 !important;
 		--sidebar-surface-primary: #17191b !important;
-		
-		/*side bar surface */
 		--sidebar-surface-secondary: #282828 !important;
-		/*Side bar Chat selected */
 		--sidebar-surface-tertiary: #504d08 !important;
 		--link: #7ab7ff !important;
 		--link-hover: #5e83b3 !important;
 	}
 
-	/*Hide the suggestiions*/
-	/*Front page  suggestions */
+	/* Hide suggestions (Existing) */
 	.dark .dark\:text-gray-500,
 	button.relative.flex.w-40.flex-col.gap-2.rounded-2xl.border.px-3.pb-4.pt-3.shadow-xxs.transition.enabled\:hover\:bg-token-main-surface-secondary.disabled\:cursor-not-allowed {
 		--tw-text-opacity: 1 !important;
@@ -511,1294 +512,534 @@
 		display: none !important;
 	}
 
-
-
-	/*Displaimer hidden */
-	/*Chat GPT might make mistakes -> hidden  */
+	/* Disclaimer hidden (Existing) */
 	div.min-h-4 {
 		opacity: 0 !important;
 	}
 
-	/*Suggestions on the first page */
+	/* Suggestions on the first page (Existing) */
 	button.relative.flex.w-40.flex-col.gap-2.rounded-2xl.border.px-3.pb-4.pt-3.shadow-xxs {
-		background-color: #17191b !important;
+		background-color: var(--sidebar-surface-primary) !important;
 		border-width: 3px !important;
 	}
 
-	
-	/*Hide the display gretting H1 Heading */
-	/*How can i Help You */
-	
+	/* Hide the display gretting H1 Heading (Existing) */
 	.inline-flex h1:first-of-type {
-  display: none !important;
-}
+		display: none !important;
+	}
 
-	
-
-	/*regeneration button */
+	/* Regeneration button (Existing) */
 	button.mb-1.me-1 {
-
-		background-color: #3c3836 !important;
+		background-color: var(--bg1-dark) !important;
 	}
 
-	/*Icons on the  */
+	/* Icons (Existing, Refactored with Nesting/Micro-interactions) */
 	svg {
-		color: #fb4934 !important;
-	}
-
-	svg:hover {
-		color: #fe8019 !important;
+		color: var(--faded-red) !important;
 		transition: color 0.4s ease-in-out !important;
+
+		&:hover {
+			color: var(--faded-orange) !important;
+		}
 	}
 
-	/*Send Message button */
+	/* Send Message button (Existing) */
 	.icon-2xl {
-			background: #1d1b1a !important ; 
-		border-radius: 12px !important ; 
-		border : solid 2px #665c54 !important ; 
-		color: #98971a !important;
+		background: var(--shadow-bg) !important ;
+		border-radius: 12px !important ;
+		border : solid 2px var(--bg3-dark) !important ;
+		color: var(--dim-green) !important;
 	}
 
-	/*Advacnved Voice Button backgound Icon  */
+	/* Advanced Voice Button backgound Icon (Existing) */
 	div.absolute.inset-0.flex.items-center.justify-center{
-		background: #1d1b1a !important ; 
-		border-radius: 12px !important ; 
-		border : solid 2px #3c3836 !important ; 
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		background: var(--shadow-bg) !important ;
+		border-radius: 12px !important ;
+		border : solid 2px var(--bg1-dark) !important ;
+	}
 
-	/*Links inside the app */
+	/* Links inside the app (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	a  {
-		color: #fb4934 !important;
-		font-family: "Bricolage Grotesque" !important;
-		font-size: 0.9rem !important ; 
+		color: var(--faded-red) !important;
+		font-family: var(--font-BricolageGrotesque) !important;
+		font-size: 0.9rem !important ;
 		font-weight: 600 !important;
+		text-decoration: none !important;
+		text-decoration-color: var(--faded-red) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover {
+			color: var(--faded-orange) !important;
+			text-decoration: underline wavy !important;
+			text-decoration-style: wavy !important;
+			text-decoration-thickness: 1px !important;
+			text-underline-offset: 2px !important;
+			transition: all 0.3s ease-in-out !important;
+			transform: translateY(-1px) !important;
+			text-shadow: 0 0 8px var(--faded-orange) !important;
+		}
 	}
 
-	
-	
-		/*Links but hiding the hover fromt the side bar chat history links */
-	a:hover {
-  		color: #83a598 !important;
-		font-family: "Bricolage Grotesque" !important;
-		font-size: 0.85rem !important;
-		font-weight: 600 !important;
-		transition: color  0.4s ease-in-out !important;
-}
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	/*Text Bindings*/
-	/*User prompt messgae displayed on chat page */
+	/* User prompt messgae displayed on chat page (Existing, Added Font Smoothing) */
 	div.whitespace-pre-wrap {
-		color: #d5c4a1 !important;
-		font-family: "Linguistics Pro" !important;
+		color: var(--text--faded) !important;
+		font-family: var(--font-LinguisticsPro) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
-	/*P tag color */
+	/* P tag color (Existing, Added Font Smoothing) */
 	.markdown p {
-		color: #d5c4a1 !important;
-		font-family: "Linguistics Pro" !important;
+		color: var(--text--faded) !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
-	
-	.markdown p:not(li p) {
- 		color: #d5c4a1 !important;
-		font-family: "Linguistics Pro" !important; 
-}
 
-	/*List -> Li , ul  , ol  */
+	.markdown p:not(li p) {	
+		color: var(--text--faded) !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* List -> Li , ul  , ol (Existing, Refactored with Nesting/Font Smoothing) */
 	.markdown li,
 	ol,
 	ul {
-		color: #f2e5bc !important;
-		font-family: "Literata Variable" !important;
-		
-	}
+		color: var(--text-offyellowish) !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 
-	li:hover,
-	ol:hover,
-	ul:hover {
-		color: #f9f5d7 !important;
-		transition: color 0.4s ease-in-out !important;
+		&:hover {
+			color: var(--text-white) !important;
+			transition: color 0.4s ease-in-out !important;
+		}
 	}
 
 	li::marker {
-		color: #fb4934 !important;
-		font-family:"Hack" !important;
-		font-size: 0.85rem !important;
+		color: var(--faded-red) !important;
+		font-family: inherit !important;
+		font-size: inherit !important;
 		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}	
+
+
+	/* Heading Styles (Existing, Refactored with Gemini Color Scheme) */
+	.markdown h1 {
+		color: var(--dark-orange) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*Formatters */
-	/*Heading */
+	.markdown h2 {
+		color: var(--faded-blue) !important;
+		font-weight: 500 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
 	.markdown h3 {
-		color: #b8bb26 !important;
-		font-family: "Bricolage Grotesque" !important;
+		color: var(--faded-yellow) !important;
+		font-weight: 500 !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+	.markdown h4 {
+		color: var(--faded-aqua) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+	.markdown h5 {
+		color: var(--faded-orange) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+	.markdown h6 {
+		color: var(--faded-green) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
-	/*Bold -> strong  color and font  */
+
+	/* Bold -> strong color and font (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	strong {
-		color: #b8bb26 !important;
-		font-family: "Bricolage Grotesque" !important;
-		font-size: 0.88rem !important;
+		color: var(--faded-green) !important;
+		font-family: inherit !important;
+		font-size: inherit !important;
 		font-weight: 700 !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			color: var(--faded-yellow) !important;
+			transform: scale(1.05) !important;
+		}
 	}
 
-	strong:hover {
-		color: #fabd2f !important;
-		transition: color 0.5s ease-in-out !important;
-	}
 
-
-	/*Top Bar styles */
+	/* Top Bar styles (Existing) */
 	.text-token-text-secondary {
-		color: #98971a !important;
-		font-family: "Bricolage Grotesque" !important;
-		
+		color: var(--dim-green) !important;
+		font-family: inherit !important;
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*Side bar stuff */
-	/*Time line in old chats (how old the chats are ) */
-	/*Days  library info in the side bar */
+	/* Side bar stuff */
+	/* Time line in old chats (how old the chats are ) (Existing) */
 	h3.font-semibold {
-		color: #b8bb26 !important;
-		font-family: "Bricolage Grotesque" !important;
+		color: var(--faded-green) !important;
+		font-family: inherit !important;
 	}
 
-
-	/*Side bar old chat colors */
-	/* Change font of the side bar old chats */
+	/* Side bar old chat colors (Existing) */
 	div.relative.grow.overflow-hidden.whitespace-nowrap {
-		color: #ffd29c !important;
-		font-family: "Jetbrains Mono" !important;
+		color: var(--text-normal) !important;
+		font-family: var(--font-Jetbrains) !important;
 		font-weight: 500 !important;
 		font-size: 0.78rem !important;
 	}
 
 
-
-
-
-	/*Side bar GPTs that were in use */
-	/*Recent GPTs in use */
+	/* Side bar GPTs that were in use (Existing) */
 	div.grow.overflow-hidden.text-ellipsis.whitespace-nowrap.text-sm.text-token-text-primary {
-		color: #fe8019 !important;
-		font-family: "Bricolage Grotesque" !important;
+		color: var(--faded-orange) !important;
+		font-family: inherit !important;
 	}
 
-	/*Explore GPTs -> Changes the color and font */
+	/* Explore GPTs -> Changes the color and font (Existing) */
 	span.text-sm {
-		color: #b8bb26 !important;
-		font-family: "Bricolage Grotesque" !important;
+		color: var(--faded-green) !important;
+		font-family: inherit !important;
 		font-size: .875rem;
 		line-height: 1.25rem;
 	}
 
 
-
-
-
-
-
-	/*Language and code button div background */
+	/* Language and code button div background (Existing) */
 	div.bg-token-main-surface-secondary.text-token-text-secondary {
-		background-color: #282828 !important;
+		background-color: var(--bg-dark) !important;
 	}
 
 
-	/*Code background */
+	/* Code background (Existing) */
 	div.overflow-y-auto.p-4 {
-		background-color: #17191b !important;
+		background-color: var(--sidebar-surface-primary) !important;
 	}
 
 
-
-
-
-
-	/*Inline Code markdown block */
+	/* Inline Code markdown block (Existing, Refactored with Nesting/Font Smoothing) */
 	p code,
 	li code {
-		color: #83a867 !important;
-		background: #282828 !important;
-		font-family: "Jetbrains Mono" !important;
+		color: var(--faded-aqua) !important;
+		background: var(--bg-dark) !important;
+		font-family: var(--font-Jetbrains) !important;
 		font-size: 0.76rem !important;
-		font-weight : 800 !important ; 
-		border: solid 1px #3c3836 !important;
-		border-radius: 23px !important ; 
+		font-weight : 800 !important ;
+		border: solid 1px var(--bg1-dark) !important;
+		border-radius: 23px !important ;
 		padding: 0.1rem 0.5rem !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
-	/*Code */
+	/* Code (Existing, Added Font Smoothing) */
 	code {
-		color: #8ec07c !important;
-		font-family: "Jetbrains Mono" !important;
+		color: var(--faded-aqua) !important;
+		font-family: $code-font !important;
 		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
-	
-	
-	/*C Based Languages */
-	
-	code.hljs.language-c {
-    color: #ebdbb2 !important; /* Text color */
-}
 
-code.hljs.language-c   .hljs-meta {
-    color: #98971a !important; /* Greenish for preprocessor directives */
-}
-
-code.hljs.language-c   .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords */
-}
-
-code.hljs.language-c   .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-code.hljs.language-c   .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-code.hljs.language-c   .hljs-type {
-    color: #83a598 !important; /* Bluish for types */
-}
-
-code.hljs.language-c   .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-code.hljs.language-c   .hljs-built_in {
-    color: #8ec07c !important; /* Aqua for built-in functions */
-}
-
-code.hljs.language-c   .hljs-title.function_ {
-    color: #fabd2f !important; /* Yellow for function names */
-}
-	
-	
-	
-	
-	
-	/*Python*/
-	.hljs.language-python {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-python .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., import, def, class, if, else, try, except, finally) */
-}
-
-.hljs.language-python .hljs-built_in {
-    color: #8ec07c !important; /* Aqua for built-in functions (e.g., print, len, open) */
-}
-
-.hljs.language-python .hljs-title {
-    color: #fabd2f !important; /* Yellow for function and class names */
-}
-
-.hljs.language-python .hljs-title.function_ {
-    color: #fabd2f !important;
-}
-
-.hljs.language-python .hljs-title.class_ {
-    color: #fabd2f !important;
-}
-
-.hljs.language-python .hljs-params {
-    color: #d3869b !important; /* Purplish for function parameters */
-}
-
-.hljs.language-python .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-python .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-python .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-python .hljs-subst {
-    color: #ebdbb2 !important; /* Default color for substitutions inside strings */
-}
-
-.hljs.language-python .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., True, False, None) */
-}
-
-.hljs.language-python .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-python .hljs-meta {
-    color: #fb4934 !important;
-}
-
-.hljs.language-python .hljs-operator {
-    color: #fb4934 !important;
-}
-
-.hljs.language-python .hljs-name {
-    color: #83a598 !important;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*Java*/
-	
-	.hljs.language-java {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-java .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., public, static, void, class, if, else, try, catch, finally, new, return, import, package) */
-}
-
-.hljs.language-java .hljs-type,
-.hljs.language-java .hljs-class .hljs-title {
-    color: #83a598 !important; /* Bluish for class names and type names (e.g., String, Integer, IOException, List, ArrayList) */
-}
-
-.hljs.language-java .hljs-function .hljs-title {
-    color: #fabd2f !important;
-}
-
-.hljs.language-java .hljs-params {
-    color: #d3869b !important;
-}
-
-.hljs.language-java .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-java .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-java .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-java .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., true, false, null) */
-}
-
-.hljs.language-java .hljs-meta {
-    color: #fabd2f !important; /* Yellow for annotations (e.g., @Override, @Test) */
-}
-
-.hljs.language-java .hljs-built_in {
-    color: #8ec07c !important;
-}
-
-.hljs.language-java .hljs-operator {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-java .hljs-symbol {
-    color: #d3869b !important;
-}
-
-.hljs.language-java .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-java .hljs-function {
-    color: #fabd2f !important;
-}
-
-.hljs.language-java .hljs-selector-tag {
-    color: #83a598 !important;
-}
-
-.hljs.language-java .hljs-attribute {
-    color: #fabd2f !important;
-}
-	
-	
-	.hljs.language-java .hljs-title{
-    color: #8ec07c !important;
-}
-	
-	
-	
-	
-	
-	/*C++*/
-	.hljs.language-cpp {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-cpp .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., if, else, for, while, int, double, char, bool, class, struct, namespace, return, new, delete, const, static, public, private, protected, virtual, friend, operator, template, typename, this, using, throw, try, catch) */
-}
-
-.hljs.language-cpp .hljs-type,
-.hljs.language-cpp .hljs-class .hljs-title {
-    color: #83a598 !important;
-}
-
-.hljs.language-cpp .hljs-title.function_ {
-    color: #fabd2f !important;
-}
-
-.hljs.language-cpp .hljs-params {
-    color: #d3869b !important;
-}
-
-.hljs.language-cpp .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-cpp .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-cpp .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-cpp .hljs-meta {
-    color: #d3869b !important;
-}
-
-.hljs.language-cpp .hljs-meta .hljs-string {
-    color: #b8bb26 !important;
-}
-
-.hljs.language-cpp .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., true, false, nullptr) */
-}
-
-.hljs.language-cpp .hljs-built_in {
-    color: #8ec07c !important; /* Aqua for built-in functions and types (e.g., std::cout, std::cin, std::endl, std::string, std::vector, std::map) */
-}
-
-.hljs.language-cpp .hljs-operator {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-cpp .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-cpp .hljs-function {
-    color: #fabd2f !important;
-}
-
-.hljs.language-cpp .hljs-symbol {
-    color: #d3869b !important;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	/*Go */
-	
-	
-	.hljs.language-go {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-go .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., package, import, func, var, const, if, else, for, range, switch, case, default, return, go, select, map, struct, interface, type, chan, defer, go, goto) */
-}
-
-.hljs.language-go .hljs-title {
-    color: #fabd2f !important;
-}
-
-.hljs.language-go .hljs-title.function_ {
-    color: #fabd2f !important; /* Yellow for function names */
-}
-
-.hljs.language-go .hljs-title.class_ {
-    color: #83a598 !important;
-}
-
-.hljs.language-go .hljs-params {
-    color: #d3869b !important;
-}
-
-.hljs.language-go .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-go .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-go .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-go .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., true, false, nil, iota) */
-}
-
-.hljs.language-go .hljs-built_in {
-    color: #8ec07c !important;
-}
-
-.hljs.language-go .hljs-operator {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-go .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-go .hljs-symbol {
-    color: #d3869b !important;
-}
-
-.hljs.language-go .hljs-meta {
-    color: #fabd2f !important;
-}
-	
-	
-	.hljs.language-go .hljs-type {
-    color: #83a598 !important;
-}
-	
-	
-	
-	/*Rust */
-	.hljs.language-rust {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-rust .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., let, mut, fn, struct, enum, impl, for, while, loop, if, else, match, return, use, mod, pub, crate, super, self, Self, move, async, await, dyn, unsafe, trait, where, as, const, static, ref, mut, type) */
-}
-
-.hljs.language-rust .hljs-type {
-    color: #83a598 !important;
-}
-
-.hljs.language-rust .hljs-title {
-    color: #fabd2f !important;
-}
-
-.hljs.language-rust .hljs-title.function_ {
-    color: #fabd2f !important; /* Yellow for function names */
-}
-
-.hljs.language-rust .hljs-title.class_ {
-    color: #83a598 !important;
-}
-
-.hljs.language-rust .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-rust .hljs-variable.language_ {
-    color: #8ec07c !important;
-}
-
-.hljs.language-rust .hljs-params {
-    color: #d3869b !important;
-}
-
-.hljs.language-rust .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-rust .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-rust .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-rust .hljs-doctag {
-    color: #928374 !important;
-}
-
-.hljs.language-rust .hljs-meta {
-    color: #d3869b !important;
-}
-
-.hljs.language-rust .hljs-meta .hljs-string {
-    color: #b8bb26 !important;
-}
-
-.hljs.language-rust .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., true, false, Some, None, Ok, Err) */
-}
-
-.hljs.language-rust .hljs-built_in {
-    color: #8ec07c !important; /* Aqua for built-in functions and types (e.g., println!, format!, String, Vec, Result, Option, Box, Rc, Arc, Cell, RefCell, &str, i32, u32, usize, f32, f64) */
-}
-
-.hljs.language-rust .hljs-operator {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-rust .hljs-punctuation {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-rust .hljs-symbol {
-    color: #d3869b !important;
-}
-
-.hljs.language-rust .hljs-attribute {
-    color: #fabd2f !important;
-}
-
-.hljs.language-rust .hljs-function {
-    color: #fabd2f !important;
-}
-	
-	
-	
-	
-	
-	
-	/* JavaScript*/
-	
-	.hljs.language-javascript {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-javascript .hljs-keyword {
-    color: #fb4934 !important; /* Reddish for keywords (e.g., function, var, if, else, while) */
-}
-
-.hljs.language-javascript .hljs-variable {
-    color: #ebdbb2 !important; /* Default variable color */
-}
-
-.hljs.language-javascript .hljs-built_in {
-    color: #8ec07c !important; /* Aqua for built-in objects and functions (e.g., console, JSON) */
-}
-
-.hljs.language-javascript .hljs-title {
-    color: #fabd2f !important; /* Yellow for function names */
-}
-
-.hljs.language-javascript .hljs-title.function_ {
-    color: #fabd2f !important;
-}
-
-.hljs.language-javascript .hljs-params {
-    color: #d3869b !important; /* Purplish for function parameters */
-}
-
-.hljs.language-javascript .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for strings */
-}
-
-.hljs.language-javascript .hljs-number {
-    color: #d3869b !important; /* Purplish for numbers */
-}
-
-.hljs.language-javascript .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-javascript .hljs-regexp {
-    color: #b8bb26 !important; /* Yellowish for regular expressions */
-}
-
-.hljs.language-javascript .hljs-literal {
-    color: #d3869b !important; /* Purplish for literals (e.g., true, false, null) */
-}
-
-.hljs.language-javascript .hljs-subst {
-    color: #ebdbb2 !important; /* Default color for substitutions inside strings */
-}
-
-.hljs.language-javascript .hljs-class {
-    color: #83a598 !important;
-}
-
-.hljs.language-javascript .hljs-attr {
-    color: #fabd2f !important;
-}
-
-.hljs.language-javascript .hljs-property {
-    color: #8ec07c !important;
-}
-
-.hljs.language-javascript .hljs-punctuation {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-javascript .hljs-operator {
-    color: #fb4934 !important;
-}
-
-.hljs.language-javascript .hljs-symbol {
-    color: #d3869b !important;
-}
-	
-	
-	
-	/*HTML*/
-	.hljs.language-html {
-    color: #ebdbb2 !important; /* Light background color for overall text */
-}
-
-.hljs.language-html .hljs-tag {
-    color: #83a598 !important; /* Bluish for HTML tags */
-}
-
-.hljs.language-html .hljs-name {
-    color: #83a598 !important; /* Bluish for tag names (e.g., div, p, h1) */
-}
-
-.hljs.language-html .hljs-attr {
-    color: #fabd2f !important; /* Yellow for attribute names (e.g., style, href, id) */
-}
-
-.hljs.language-html .hljs-string {
-    color: #b8bb26 !important; /* Yellowish for attribute values (the strings in quotes) */
-}
-
-.hljs.language-html .hljs-comment {
-    color: #928374 !important; /* Gray for comments */
-}
-
-.hljs.language-html .hljs-meta {
-    color: #fb4934 !important; /* Reddish for doctype declaration */
-}
-
-.hljs.language-html .hljs-keyword {
-    color: #fb4934 !important;
-}
-
-.hljs.language-html .hljs-symbol {
-    color: #d3869b !important;
-}
-
-.hljs.language-html .hljs-title,
-.hljs.language-html .hljs-section {
-    color: #fabd2f !important;
-}
-
-.hljs.language-html .hljs-selector-class,
-.hljs.language-html .hljs-selector-id,
-.hljs-selector-tag {
-    color: #83a598 !important;
-}
-
-.hljs.language-html .hljs-template-variable,
-.hljs.language-html .hljs-variable {
-    color: #ebdbb2 !important;
-}
-
-.hljs.language-html .hljs-built_in,
-.hljs.language-html .hljs-link {
-    color: #8ec07c !important;
-}
-	
-	
-	
-	/*
-	
-			General COde styles 	
-*/
+	/* Code Highlighting (Existing - kept as is) */
 	.hljs {
-    color: #ebdbb2 !important; /* Default text color */
-}
-
-/* Comments */
-.hljs-comment {
-    color: #928374 !important; /* Gray */
-}
-
-/* Quotes */
-.hljs-quote {
-    color: #7c7873 !important; /* Slightly different gray */
-}
-
-/* Strings */
-.hljs-string {
-    color: #b8bb26 !important; /* Yellowish */
-}
-
-/* Regular Expressions */
-.hljs-regexp {
-    color: #d8a657 !important; /*  Orangish Yellow*/
-}
-
-/* Variables */
-.hljs-variable {
-    color: #ebdbb2 !important; /* keep default color */
-}
-
-/* Template Variables */
-.hljs-template-variable {
-    color: #ebdbb2 !important;
-}
-
-/* Attributes */
-.hljs-attribute {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Links */
-.hljs-link {
-    color: #b8bb26 !important; /* Yellowish */
-}
-
-/* Symbols */
-.hljs-symbol {
-    color: #ebdbb2 !important;
-}
-
-/* Bullet Points */
-.hljs-bullet {
-    color: #b8bb26 !important; /* Yellowish */
-}
-
-/* Meta String */
-.hljs-meta .hljs-string {
-    color: #b8bb26 !important; /* Yellowish */
-}
-
-/* Keywords */
-.hljs-keyword {
-    color: #fb4934 !important; /* Reddish */
-}
-
-/* Section Tag */
-.hljs-selector-tag {
-    color: #fb4934 !important; /* Reddish */
-}
-
-/* Operators */
-.hljs-operator {
-    color: #fb4934 !important; /* Reddish */
-}
-
-/* Punctuation */
-.hljs-punctuation {
-    color: #ebdbb2 !important; /* Default text color */
-}
-
-/* Function Titles */
-.hljs-title.function_,
-.hljs-function .hljs-title {
-    color: #fabd2f !important; /* Yellow */
-}
-
-/* Other Titles */
-.hljs-title,
-.hljs-section {
-    color: #fabd2f !important; /* Yellow */
-}
-
-/* Selector ID */
-.hljs-selector-id {
-    color: #fabd2f !important; /* Yellow */
-}
-
-/* Selector Class */
-.hljs-selector-class {
-    color: #83a598 !important;
-}
-
-/* Selector Pseudo */
-.hljs-selector-pseudo {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Meta */
-.hljs-meta {
-    color: #fabd2f !important; /* Yellow */
-}
-
-/* Numbers */
-.hljs-number {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Literals */
-.hljs-literal {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Deletion */
-.hljs-deletion {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Built-in Names */
-.hljs-built_in,
-.hljs-builtin-name {
-    color: #8ec07c !important; /* Aqua */
-}
-
-/* Types */
-.hljs-type {
-    color: #83a598 !important; /* Bluish */
-}
-
-/* Function Parameters */
-.hljs-params {
-    color: #ebdbb2 !important;
-}
-
-/* Class Titles */
-.hljs-class .hljs-title,
-.hljs-title.class_ {
-    color: #83a598 !important; /* Bluish */
-}
-
-/* Tags */
-.hljs-tag {
-    color: #fb4934 !important;
-}
-
-/* Tag Names */
-.hljs-name {
-    color: #fb4934 !important;
-}
-
-/* Doctag */
-.hljs-doctag {
-    color: #83a598 !important; /* Bluish */
-}
-
-/* Meta Keywords */
-.hljs-meta .hljs-keyword {
-    color: #d3869b !important; /* Purplish */
-}
-
-/* Emphasis */
-.hljs-emphasis {
-    font-style: italic !important;
-}
-
-/* Strong */
-.hljs-strong {
-    font-weight: bold !important;
-}
-
-/* Additions */
-.hljs-addition {
-    color: #8ec07c !important; /* Aqua */
-}
-
-/* Formula */
-.hljs-formula {
-    font-style: italic !important;
-}
-
-/* Language Specifics (Placeholders) */
-.hljs-subst {
-    color: #ebdbb2 !important; /* Default text color */
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*Font For Coding */
-	.hljs-comment,
-.hljs-keyword,
-.hljs-string,
-.hljs-meta,
-.hljs-title,
-.hljs-type,
-.hljs-class,
-.hljs-number,
-.hljs-params,
-.hljs-attr,
-.hljs-name,
-.hljs-attribute,
-.hljs-selector-class,
-.hljs-bullet,
-.hljs-section,
-.hljs-selector-pseudo {
-  font-family: "Jetbrains Mono" !important;
-}
-	
-	
-	
-	
-	
-
-	/*markdown code block strong */
-	span.hljs-strong {
-		color: #b8bb26 !important;
+		color: var(--fg-dark) !important;
+	}
+	.hljs-comment {
+		color: var(--text--veryfade) !important;
+	}
+	.hljs-quote {
+		color: #7c7873 !important;
+	}
+	.hljs-string {
+		color: var(--faded-green) !important;
+	}
+	.hljs-regexp {
+		color: var(--faded-orange) !important;
+	}
+	.hljs-variable {
+		color: var(--fg-dark) !important;
+	}
+	.hljs-template-variable {
+		color: var(--fg-dark) !important;
+	}
+	.hljs-attribute {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-link {
+		color: var(--faded-green) !important;
+	}
+	.hljs-symbol {
+		color: var(--fg-dark) !important;
+	}
+	.hljs-bullet {
+		color: var(--faded-green) !important;
+	}
+	.hljs-meta .hljs-string {
+		color: var(--faded-green) !important;
+	}
+	.hljs-keyword {
+		color: var(--faded-red) !important;
+	}
+	.hljs-selector-tag {
+		color: var(--faded-red) !important;
+	}
+	.hljs-operator {
+		color: var(--faded-red) !important;
+	}
+	.hljs-punctuation {
+		color: var(--fg-dark) !important;
+	}
+	.hljs-title.function_,
+	.hljs-function .hljs-title {
+		color: var(--faded-yellow) !important;
+	}
+	.hljs-title,
+	.hljs-section {
+		color: var(--faded-yellow) !important;
+	}
+	.hljs-selector-id {
+		color: var(--faded-yellow) !important;
+	}
+	.hljs-selector-class {
+		color: var(--faded-blue) !important;
+	}
+	.hljs-selector-pseudo {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-meta {
+		color: var(--faded-yellow) !important;
+	}
+	.hljs-number {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-literal {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-deletion {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-built_in,
+	.hljs-builtin-name {
+		color: var(--faded-aqua) !important;
+	}
+	.hljs-type {
+		color: var(--faded-blue) !important;
+	}
+	.hljs-params {
+		color: var(--fg-dark) !important;
+	}
+	.hljs-class .hljs-title,
+	.hljs-title.class_ {
+		color: var(--faded-blue) !important;
+	}
+	.hljs-tag {
+		color: var(--faded-red) !important;
+	}
+	.hljs-name {
+		color: var(--faded-red) !important;
+	}
+	.hljs-doctag {
+		color: var(--faded-blue) !important;
+	}
+	.hljs-meta .hljs-keyword {
+		color: var(--faded-purple) !important;
+	}
+	.hljs-emphasis {
+		font-style: italic !important;
+	}
+	.hljs-strong {
+		font-weight: bold !important;
+	}
+	.hljs-addition {
+		color: var(--faded-aqua) !important;
+	}
+	.hljs-formula {
+		font-style: italic !important;
+	}
+	.hljs-subst {
+		color: var(--fg-dark) !important;
 	}
 
+	/* Font For Coding (Existing, Refactored to use $code-font) */
+	.hljs-comment,
+	.hljs-keyword,
+	.hljs-string,
+	.hljs-meta,
+	.hljs-title,
+	.hljs-type,
+	.hljs-class,
+	.hljs-number,
+	.hljs-params,
+	.hljs-attr,
+	.hljs-name,
+	.hljs-attribute,
+	.hljs-selector-class,
+	.hljs-bullet,
+	.hljs-section,
+	.hljs-selector-pseudo {
+		font-family: var(--font-Jetbrains) !important;
+	}
 
+	/* markdown code block strong (Existing) */
+	span.hljs-strong {
+		color: var(--faded-green) !important;
+	}
 
-	
-	
-
-
-
-
+	/* Code block language label (Existing) */
 	div.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md > span {
-
-		font-family: "CommitMono" !important;
+		font-family: var(--font-CommitMono) !important;
 		font-size: 0.9rem !important;
 		font-weight: 600 !important;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*error backgound */
+	/* error backgound (Existing) */
 	.text-token-text-error {
-		background-color: #17191b !important;
+		background-color: var(--sidebar-surface-primary) !important;
 		color: black !important;
 	}
 
-
-	/*border dialogue box */
+	/* border dialogue box (Existing) */
 	.border-token-surface-error\/15 {
-		border-color: #8ec07c !important;
+		border-color: var(--faded-aqua) !important;
 	}
 
-
-
-
-
-
-
-
-
-
-	/*Buttons and colors */
-	/*input button background*/
+	/* Buttons and colors */
+	/* input button background (Existing, Refactored with Nesting/Micro-interactions) */
 	.dark .dark\:bg-token-main-surface-secondary {
-		background-color: #16181a !important;
-		border: solid 2px #504945 !important;
+		background-color: var(--shadow) !important;
+		border: solid 2px var(--bg2-dark) !important;
 		padding: 0.2rem 3rem !important;
-	}
-	/*Hover*/
-	/*Hover for the border and other stuff in the backgorund */
-	/*text holder button */
-	.dark .dark\:bg-token-main-surface-secondary:hover {
-		background-color: #16181a !important;
-		border: solid 2px #928374 !important;
-		padding: 0.2rem 3.2rem !important;
-		transition: background 0.6s ease-in-out, padding 0.22s ease-in-out !important;
+		transition: background 0.6s ease-in-out, padding 0.22s ease-in-out, border 0.22s ease-in-out !important;
+
+		&:hover {
+			background-color: var(--shadow) !important;
+			border: solid 2px var(--bg5-dark) !important;
+			padding: 0.2rem 3.2rem !important;
+		}
 	}
 
-
-	/*text holder button */
-	
+	/* text holder button (Existing, Added Font Smoothing) */
 	p.placeholder {
-		color: #83a598 !important;
-    font-family: "Fantasque Sans Mono Bold" !important;
+		color: var(--faded-blue) !important;
+		font-family: var(--font-FantasqueSansMonoBold) !important;
 		font-size: 0.95rem !important;
 		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
-	
-	
-	/*User Prompt Color */
+
+	/* User Prompt Color (Existing, Added Font Smoothing) */
 	div#prompt-textarea.ProseMirror[contenteditable="true"] {
-	color : #d5c4a1 !important ;  
-    font-family: "Fantasque Sans Mono Bold" !important;
-}
-	
-	
-	
-	/*chat page main share button */
-	
-	.mb-1\.5 .text-token-text-primary {
-    color: #b8bb26 ; 
-    font-family: "Fantasque Sans Mono Bold" !important;
-		font-size: 0.98rem !important ; 
-		font-weight: 600 !important ; 
-		border: solid 2px  #3c3836 !important ; 
-		padding : 0rem 1rem !important; 
-}
-	
-	/*Chat -> Share Hover button */
-	.mb-1\.5 .text-token-text-primary:hover{
-		background: #f9f5d7 !important ; 
-    color: #79740e ; 
-    font-family: "Fantasque Sans Mono Bold" !important;
-		font-size: 0.98rem !important ; 
-		font-weight: 600 !important ; 
-		border: solid #3c3836 !important ; 
-		padding : 0rem 1.2rem !important; 
-		transition: background 0.5s ease-in-out , padding 0.3s ease-in !important ; 		 
-			 
-		
-}
-	
-	
-	/* Options inside  the  share button */
-	 
-	div.text-sm{
-  color : #b8bb26 !important  ; 
-		font-family: "Bricolage Grotesque" !important ; 
-}
-	
-	
-	
-	
-	/*Links on teh news page */
-	a.ml-1.inline-flex.h-\[22px\].items-center.rounded-xl.bg-\[\#f4f4f4\].px-2.text-\[0\.5em\].font-medium.text-token-text-secondary.dark\:bg-token-main-surface-secondary.\!text-token-text-secondary.uppercase.hover\:bg-token-text-primary.hover\:\!text-token-main-surface-secondary.dark\:hover\:bg-token-text-primary.group {
- 		background: #16181a !important ; 
-		border: solid 2.7px #504945 !important ; 
-		color: #83a867 !important;
-		font-family: "Jetbrains Mono Variable" !important;
-		font-family: "Bricolage Grotesque" !important ; 
-		font-size: 0.76rem !important;
-		font-weight : 800 !important ; 
-		border-radius: 23px !important ; 
-		padding: .8rem .5rem !important;
-   
-}
-	
-	/*Tranculate links */
-	/*links from other websites which are hidden  like embedded links */
-	span.truncate {
-		
-    color: #fb4934 !important;
-	text-decoration: underline !important;
-    font-size: 0.79rem !important;
-		font-family: "Bricolage Grotesque" !important ; 
-    font-weight: 800 !important;
-    border-radius: 23px !important;
-    padding: 0.1rem 0.5rem !important;
-}
-
-	/*Embedded link hover */
-	span.truncate:hover {
-			
-    color: #83a598 !important;
-		font-family: "Bricolage Grotesque" !important ; 
-    font-size: 0.79rem !important;
-    font-weight: 800 !important;
-    padding: 0.1rem 0.9rem !important;
-	transition: padding .4s ease-in-out !important ; 
+		color : var(--text--faded) !important ;
+		font-family: var(--font-FantasqueSansMonoBold) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
-	
-	
-	
-	
-	
-	/*Msc STyles */
-	div.markdown.prose hr {
-    border-color: #3c3836 !important;
-}
-	
-	
-	
-	
-}
 
+	/* chat page main share button (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
+	.mb-1\.5 .text-token-text-primary {
+		color: var(--faded-green) !important;
+		font-family: var(--font-FantasqueSansMonoBold) !important;
+		font-size: 0.98rem !important ;
+		font-weight: 600 !important ;
+		border: solid 2px  var(--bg1-dark) !important ;
+		padding : 0rem 1rem !important;
+		transition: all 0.5s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover{
+			background: var(--text-white) !important ;
+			color: var(--dark-green) !important;
+			padding : 0rem 1.2rem !important;
+			transform: translateY(-1px) scale(1.02) !important;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	/* Options inside the share button (Existing) */
+	div.text-sm{
+		color : var(--faded-green) !important  ;
+		font-family: var(--font-BricolageGrotesque) !important ;
+	}
+
+
+	/* Links on the news page (Existing, Refactored with Nesting/Font Smoothing) */
+	a.ml-1.inline-flex.h-\[22px\].items-center.rounded-xl.bg-\[\#f4f4f4\].px-2.text-\[0\.5em\].font-medium.text-token-text-secondary.dark\:bg-token-main-surface-secondary.\!text-token-text-secondary.uppercase.hover\:bg-token-text-primary.hover\:\!text-token-main-surface-secondary.dark\:hover\:bg-token-text-primary.group {
+		background: var(--shadow) !important ;
+		border: solid 2.7px var(--bg2-dark) !important ;
+		color: var(--faded-aqua) !important;
+		font-family: var(--font-BricolageGrotesque) !important ;
+		font-size: 0.76rem !important;
+		font-weight : 800 !important ;
+		border-radius: 23px !important ;
+		padding: .8rem .5rem !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover {
+			border-color: var(--faded-aqua) !important;
+			transform: scale(1.05) !important;
+			transition: all 0.3s ease-in-out !important;
+		}
+	}
+
+	/* Truncate links (Embedded links) (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
+	span.truncate {
+		color: var(--faded-red) !important;
+		text-decoration: underline !important;
+		font-size: 0.79rem !important;
+		font-family: var(--font-BricolageGrotesque) !important ;
+		font-weight: 800 !important;
+		border-radius: 23px !important;
+		padding: 0.1rem 0.5rem !important;
+		transition: all 0.4s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover {
+			color: var(--faded-blue) !important;
+			padding: 0.1rem 0.9rem !important;
+			text-shadow: 0 0 5px var(--faded-blue) !important;
+		}
+	}
+
+	/* Msc STyles (Existing) */
+	div.markdown.prose hr {
+		border-color: var(--bg1-dark) !important;
+	}
+}
