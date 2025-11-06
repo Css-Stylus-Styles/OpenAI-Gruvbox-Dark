@@ -1049,7 +1049,7 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: #282828 !important;
+			background-color: var(--bg1-dark) !important;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
 			color: var(--faded-blue) !important;
 			padding: 0.1rem 0.9rem !important;
