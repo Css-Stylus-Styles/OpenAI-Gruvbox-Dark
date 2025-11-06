@@ -1,5 +1,7 @@
 # AGENT CODING GUIDELINES
 
+Last Updated: November 7, 2025
+
 This repository contains a single Stylus-based UserCSS file. All modifications must adhere to the existing style and structure.
 
 ## 1. Build, Lint, and Test Commands
