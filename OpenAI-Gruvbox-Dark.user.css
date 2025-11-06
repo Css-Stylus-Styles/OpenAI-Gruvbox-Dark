@@ -561,7 +561,7 @@
 	/* Links inside the app (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	a  {
 		color: var(--faded-red) !important;
-		font-family: var(--font-BricolageGrotesque) !important;
+		font-family: inherit !important;
 		font-size: 0.9rem !important ;
 		font-weight: 600 !important;
 		text-decoration: none !important;
@@ -585,7 +585,7 @@
 	/* User prompt messgae displayed on chat page (Existing, Added Font Smoothing) */
 	div.whitespace-pre-wrap {
 		color: var(--text--faded) !important;
-		font-family: var(--font-LinguisticsPro) !important;
+		font-family: inherit !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -709,7 +709,7 @@
 	/* Side bar old chat colors (Existing) */
 	div.relative.grow.overflow-hidden.whitespace-nowrap {
 		color: var(--text-normal) !important;
-		font-family: var(--font-Jetbrains) !important;
+		font-family: inherit !important;
 		font-weight: 500 !important;
 		font-size: 0.78rem !important;
 	}
@@ -747,7 +747,7 @@
 	li code {
 		color: var(--faded-aqua) !important;
 		background: var(--bg-dark) !important;
-		font-family: var(--font-Jetbrains) !important;
+		font-family: inherit !important;
 		font-size: 0.76rem !important;
 		font-weight : 800 !important ;
 		border: solid 1px var(--bg1-dark) !important;
@@ -762,8 +762,15 @@
 	/* Code (Existing, Added Font Smoothing) */
 	code {
 		color: var(--faded-aqua) !important;
-		font-family: $code-font !important;
+		font-family: inherit !important;
 		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	code span {
+		font-family: $code-font !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -906,7 +913,7 @@
 	.hljs-bullet,
 	.hljs-section,
 	.hljs-selector-pseudo {
-		font-family: var(--font-Jetbrains) !important;
+		font-family: inherit !important;
 	}
 
 	/* markdown code block strong (Existing) */
@@ -916,7 +923,7 @@
 
 	/* Code block language label (Existing) */
 	div.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md > span {
-		font-family: var(--font-CommitMono) !important;
+		font-family: inherit !important;
 		font-size: 0.9rem !important;
 		font-weight: 600 !important;
 	}
@@ -950,7 +957,7 @@
 	/* text holder button (Existing, Added Font Smoothing) */
 	p.placeholder {
 		color: var(--faded-blue) !important;
-		font-family: var(--font-FantasqueSansMonoBold) !important;
+		font-family: inherit !important;
 		font-size: 0.95rem !important;
 		font-weight: 600 !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -961,7 +968,7 @@
 	/* User Prompt Color (Existing, Added Font Smoothing) */
 	div#prompt-textarea.ProseMirror[contenteditable="true"] {
 		color : var(--text--faded) !important ;
-		font-family: var(--font-FantasqueSansMonoBold) !important;
+		font-family: inherit !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -970,7 +977,7 @@
 	/* chat page main share button (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	.mb-1\.5 .text-token-text-primary {
 		color: var(--faded-green) !important;
-		font-family: var(--font-FantasqueSansMonoBold) !important;
+		font-family: inherit !important;
 		font-size: 0.98rem !important ;
 		font-weight: 600 !important ;
 		border: solid 2px  var(--bg1-dark) !important ;
