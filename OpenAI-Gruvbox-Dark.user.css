@@ -1026,7 +1026,7 @@
 
 	/* Truncate links (Embedded links) (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	span.truncate {
-		color: var(--faded-red) !important;
+		color: var(--faded-aqua) !important;
 		text-decoration: underline !important;
 		font-size: 0.79rem !important;
 		font-family: var(--font-BricolageGrotesque) !important ;
