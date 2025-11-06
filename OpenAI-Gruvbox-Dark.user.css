@@ -536,10 +536,17 @@
 	/* Icons (Existing, Refactored with Nesting/Micro-interactions) */
 	svg {
 		color: var(--faded-red) !important;
-		transition: color 0.4s ease-in-out !important;
+		transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
 		&:hover {
-			color: var(--faded-orange) !important;
+			color: var(--faded-blue) !important;
+			text-decoration: underline !important;
+			text-decoration-color: var(--faded-blue) !important;
+			text-underline-offset: 2px !important;
+			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+			transform: translateY(-1px) !important;
+			text-shadow: 0 0 2px var(--faded-blue) !important;
+			text-underline-position: under !important;
 		}
 	}
 
@@ -576,7 +583,7 @@
 			text-decoration-style: wavy !important;
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
-			transition: all 0.3s ease-in-out !important;
+			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 			transform: translateY(-1px) !important;
 			text-shadow: 0 0 8px var(--faded-orange) !important;
 		}
@@ -620,7 +627,7 @@
 
 		&:hover {
 			color: var(--text-white) !important;
-			transition: color 0.4s ease-in-out !important;
+			transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 		}
 	}
 
@@ -683,7 +690,7 @@
 		font-family: inherit !important;
 		font-size: inherit !important;
 		font-weight: 700 !important;
-		transition: all 0.3s ease-in-out !important;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
 		&:hover {
 			color: var(--faded-yellow) !important;
@@ -948,7 +955,7 @@
 		background-color: var(--shadow) !important;
 		border: solid 2px var(--bg2-dark) !important;
 		padding: 0.2rem 3rem !important;
-		transition: background 0.6s ease-in-out, padding 0.22s ease-in-out, border 0.22s ease-in-out !important;
+		transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1), padding 0.22s cubic-bezier(0.4, 0, 0.2, 1), border 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
 		&:hover {
 			background-color: var(--shadow) !important;
@@ -985,7 +992,7 @@
 		font-weight: 600 !important ;
 		border: solid 2px  var(--bg1-dark) !important ;
 		padding : 0rem 1rem !important;
-		transition: all 0.5s ease-in-out !important;
+		transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1023,7 +1030,7 @@
 		&:hover {
 			border-color: var(--faded-aqua) !important;
 			transform: scale(1.05) !important;
-			transition: all 0.3s ease-in-out !important;
+			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 		}
 	}
 
@@ -1036,7 +1043,7 @@
 		font-weight: 800 !important;
 		border-radius: 23px !important;
 		padding: 0.1rem 0.5rem !important;
-		transition: all 0.4s ease-in-out !important;
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
