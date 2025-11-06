@@ -1015,10 +1015,9 @@
 
 	/* Links on the news page (Existing, Refactored with Nesting/Font Smoothing) */
 	a.ml-1.inline-flex.h-\[22px\].items-center.rounded-xl.bg-\[\#f4f4f4\].px-2.text-\[0\.5em\].font-medium.text-token-text-secondary.dark\:bg-token-main-surface-secondary.\!text-token-text-secondary.uppercase.hover\:bg-token-text-primary.hover\:\!text-token-main-surface-secondary.dark\:hover\:bg-token-text-primary.group {
-		background: var(--shadow) !important ;
+		background: var(--bg-dark-new) !important ;
 		border: solid 2.7px var(--bg2-dark) !important ;
-		color: var(--faded-aqua) !important;
-		font-family: var(--font-BricolageGrotesque) !important ;
+		font-family: $code-font !important ;
 		font-size: 0.76rem !important;
 		font-weight : 800 !important ;
 		border-radius: 23px !important ;
