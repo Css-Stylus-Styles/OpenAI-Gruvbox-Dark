@@ -625,10 +625,7 @@
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
 
-		&:hover {
-			color: var(--text-white) !important;
-			transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-		}
+		&:hover {}
 	}
 
 	li::marker {
@@ -1016,12 +1013,12 @@
 	/* Links on the news page (Existing, Refactored with Nesting/Font Smoothing) */
 	a.ml-1.inline-flex.h-\[22px\].items-center.rounded-xl.bg-\[\#f4f4f4\].px-2.text-\[0\.5em\].font-medium.text-token-text-secondary.dark\:bg-token-main-surface-secondary.\!text-token-text-secondary.uppercase.hover\:bg-token-text-primary.hover\:\!text-token-main-surface-secondary.dark\:hover\:bg-token-text-primary.group {
 		background: var(--bg-dark-new) !important ;
-		border: solid 2.7px var(--bg2-dark) !important ;
+		border: solid 1px var(--bg2-dark) !important ;
 		font-family: $code-font !important ;
 		font-size: 0.76rem !important;
 		font-weight : 800 !important ;
-		border-radius: 23px !important ;
-		padding: .8rem .5rem !important;
+		border-radius: 12px !important ;
+		padding: 0.3rem 0.5rem !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1059,5 +1056,5 @@
 	/* Msc STyles (Existing) */
 	div.markdown.prose hr {
 		border-color: var(--bg1-dark) !important;
-	}
+g	}
 }
