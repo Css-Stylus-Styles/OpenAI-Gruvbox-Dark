@@ -560,8 +560,8 @@
 
 	/* Links inside the app (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	a  {
-		color: var(--faded-red) !important;
-		font-family: inherit !important;
+		color: var(--faded-blue) !important;
+		font-family: $code-font !important;
 		font-size: 0.9rem !important ;
 		font-weight: 600 !important;
 		text-decoration: none !important;
