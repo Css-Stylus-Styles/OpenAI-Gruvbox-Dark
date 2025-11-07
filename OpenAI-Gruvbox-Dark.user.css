@@ -20,7 +20,7 @@
 
 
 @var select newfont 'Text Font' [
-    'Test Tiempos Text',
+    'Test Tiempos Text Medium',
     'Website Default',
 	'Geist Sans',
 ]
@@ -533,22 +533,6 @@
 		background-color: var(--bg1-dark) !important;
 	}
 
-	/* Icons (Existing, Refactored with Nesting/Micro-interactions) */
-	svg {
-		color: var(--faded-red) !important;
-		transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-
-		&:hover {
-			color: var(--faded-blue) !important;
-			text-decoration: underline !important;
-			text-decoration-color: var(--faded-blue) !important;
-			text-underline-offset: 2px !important;
-			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-			transform: translateY(-1px) !important;
-			text-shadow: 0 0 2px var(--faded-blue) !important;
-			text-underline-position: under !important;
-		}
-	}
 
 	/* Send Message button (Existing) */
 	.icon-2xl {
@@ -565,29 +549,6 @@
 		border : solid 2px var(--bg1-dark) !important ;
 	}
 
-	/* Links inside the app (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
-	a  {
-		color: var(--faded-blue) !important;
-		font-family: $code-font !important;
-		font-size: 0.9rem !important ;
-		font-weight: 600 !important;
-		text-decoration: none !important;
-		text-decoration-color: var(--faded-red) !important;
-		-webkit-font-smoothing: antialiased !important;
-		-moz-osx-font-smoothing: grayscale !important;
-		text-rendering: optimizeLegibility !important;
-
-		&:hover {
-			color: var(--faded-orange) !important;
-			text-decoration: underline wavy !important;
-			text-decoration-style: wavy !important;
-			text-decoration-thickness: 1px !important;
-			text-underline-offset: 2px !important;
-			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-			transform: translateY(-1px) !important;
-			text-shadow: 0 0 8px var(--faded-orange) !important;
-		}
-	}
 
 	/* User prompt messgae displayed on chat page (Existing, Added Font Smoothing) */
 	div.whitespace-pre-wrap {
@@ -972,15 +933,39 @@
 		text-rendering: optimizeLegibility !important;
 	}
 
-	/* User Prompt Color (Existing, Added Font Smoothing) */
-	div#prompt-textarea.ProseMirror[contenteditable="true"] {
-		color : var(--text--faded) !important ;
+	/* Chat message styling */
+	/* INput message container and teh sources button at the bottom of the ai response */
+	.flex.h-full.flex-1.flex-col , .bg-token-bg-primary{
+			background-color: var(--bg-def-dark) !important;
+			border: solid 2px var(--bg2-dark) !important;
+		}
+
+
+	/* Input messages container sources container at the botton of the ai response */
+	.markdown {
+		background-color: var(--bg-def-dark) !important;
+		border-radius: 8px !important;
+		padding: 12px !important;
+		margin: 8px 0 !important;
+	}
+
+
+
+	/* Text content */
+	.markdown p, 
+	.markdown ol, 
+	.markdown ul, 
+	.markdown pre,
+	.markdown code,
+	.markdown .whitespace-pre-wrap {
+		color: var(--text--faded) !important;
 		font-family: inherit !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
 	}
 
+	
 	/* chat page main share button (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
 	.mb-1\.5 .text-token-text-primary {
 		color: var(--faded-green) !important;
@@ -1030,31 +1015,10 @@
 		}
 	}
 
-	/* Truncate links (Embedded links) (Existing, Refactored with Nesting/Micro-interactions/Font Smoothing) */
-	span.truncate {
-		color: var(--faded-aqua) !important;
-		text-decoration: underline !important;
-		font-size: 0.79rem !important;
-		font-family: var(--font-BricolageGrotesque) !important ;
-		font-weight: 800 !important;
-		border-radius: 23px !important;
-		padding: 0.1rem 0.5rem !important;
-		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-		-webkit-font-smoothing: antialiased !important;
-		-moz-osx-font-smoothing: grayscale !important;
-		text-rendering: optimizeLegibility !important;
 
-		&:hover {
-			background-color: var(--bg1-dark) !important;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
-			color: var(--faded-blue) !important;
-			padding: 0.1rem 0.9rem !important;
-			text-shadow: 0 0 5px var(--faded-blue) !important;
-		}
-	}
 
 	/* Msc STyles (Existing) */
 	div.markdown.prose hr {
 		border-color: var(--bg1-dark) !important;
-g	}
+}
 }
